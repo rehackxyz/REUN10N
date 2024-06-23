@@ -1,4 +1,4 @@
-# Web - Pow
+# Pwn - nc
 Solved by **ss51**
 
 ## Question

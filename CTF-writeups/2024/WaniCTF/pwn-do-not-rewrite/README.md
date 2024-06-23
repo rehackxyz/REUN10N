@@ -1,4 +1,4 @@
-# Web - do_not_rewrite
+# Pwn - do_not_rewrite
 Solved by **CapangJabba**
 
 ## Question

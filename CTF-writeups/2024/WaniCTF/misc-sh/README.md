@@ -1,5 +1,5 @@
 # Misc - sh
-Solved by 0x251e\
+Solved by **0x251e**\
 Original writeup by 0x251e - https://medium.com/@shreethaar/wanictf-2024-sh-37eb1bb2ea63
 
 ## Question

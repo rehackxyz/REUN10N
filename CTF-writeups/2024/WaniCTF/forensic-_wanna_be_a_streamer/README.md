@@ -14,4 +14,4 @@ Extract the RTP/RTSP packets from the given `.pcap` file and and use `h264` prot
 Once extracted, play the file using `ffmpeg` or other media player that supports the protocol, example IINA for MacOS.
 
 ### Flag
-`FLAG{Th4nk_y0u_f0r_W4tching}``
+`FLAG{Th4nk_y0u_f0r_W4tching}`

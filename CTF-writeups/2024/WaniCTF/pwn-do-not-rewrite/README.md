@@ -423,7 +423,7 @@ io.sendline(b'aaaa')
 io.interactive()
 ```
 
-![Flag](assests/flag.png)
+![Flag](assets/flag.png)
 
 
 ### Flag

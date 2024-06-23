@@ -1,4 +1,4 @@
-# Forensic - Surveillance_of_sus
+# Forensic - mem_search
 Solved by **warlocksmurf**\
 Original writeup by **warlocksmurf** - https://warlocksmurf.github.io/posts/wanictf2024/
 

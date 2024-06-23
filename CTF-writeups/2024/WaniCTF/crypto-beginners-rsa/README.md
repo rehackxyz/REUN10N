@@ -1,4 +1,4 @@
-# Cryto - beginners_rsa
+# Crypto - beginners_rsa
 Solved by **SungJinwoo**
 
 ## Question

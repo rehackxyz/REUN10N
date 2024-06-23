@@ -1,37 +1,34 @@
-# Cryto - beginners_rsa
-Solved by **SungJinwoo**
+# Rev - Lambda
+Solved by **ks**
 
 ## Question
-Do you know RSA?
+Let's dance with lambda!
 
 ## Solution
 ```
-from sympy.ntheory import factorint
-from Crypto.Util.number import long_to_bytes
+# Encoded target string
+encoded_target = '16_10_13_x_6t_4_1o_9_1j_7_9_1j_1o_3_6_c_1o_6r'
 
-# Given values
-n = 317903423385943473062528814030345176720578295695512495346444822768171649361480819163749494400347
-e = 65537
-enc = 127075137729897107295787718796341877071536678034322988535029776806418266591167534816788125330265
+# Function to decode the encoded string
+def decode(encoded_str):
+    return ''.join(chr(int(c, 36) + 10) for c in encoded_str.split('_'))
 
-# Factorize n to get the prime factors
-factors = factorint(n)
-assert len(factors) == 5, "Expected 5 prime factors"
-p, q, r, s, a = factors.keys()
+# Function to apply reverse transformations
+def reverse_transform(input_str):
+    # Reverse of Transform 3: XOR with 123
+    step1 = ''.join(chr(123 ^ ord(c)) for c in input_str)
+    # Reverse of Transform 2: shift characters +3
+    step2 = ''.join(chr(ord(c) + 3) for c in step1)
+    # Reverse of Transform 1: shift characters -12
+    return ''.join(chr(ord(c) - 12) for c in step2)
 
-# Compute φ(n)
-phi_n = (p-1) * (q-1) * (r-1) * (s-1) * (a-1)
+# Decode the target and apply the reverse transformations
+decoded_target = decode(encoded_target)
+original_flag = reverse_transform(decoded_target)
 
-# Compute the private exponent d
-d = pow(e, -1, phi_n)
-
-# Decrypt the ciphertext
-m = pow(enc, d, n)
-
-# Convert the decrypted message back to bytes
-flag = long_to_bytes(m)
-print(flag)
+# Print the original flag
+print("Original Flag:", original_flag)
 ```
 
 ### Flag
-`FLAG{S0_3a5y_1254!!}`
+`FLAG{}`

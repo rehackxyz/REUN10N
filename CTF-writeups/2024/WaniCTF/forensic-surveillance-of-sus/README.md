@@ -3,11 +3,10 @@ Solved by **warlocksmurf**\
 Original writeup by **warlocksmurf** - https://warlocksmurf.github.io/posts/wanictf2024/
 
 ## Question
-I found an unknown file, and upon opening it, it caused some strange behavior, so I took a memory dump!\
+A PC is showing suspicious activity, possibly controlled by a malicious individual.
 
-How was the attack carried out?
+It seems a cache file from this PC has been retrieved. Please investigate it!
 
-Note: the file is too big, so it will not be uploaded here.
 
 ## Solution
 We are given a cache file to investigate.

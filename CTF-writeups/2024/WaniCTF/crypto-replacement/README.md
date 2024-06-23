@@ -1,4 +1,4 @@
-# Cryto - replacement
+# Crypto - replacement
 Solved by **SungJinwoo**
 
 ## Question

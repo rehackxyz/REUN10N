@@ -1,4 +1,4 @@
-# Misc - sh
+# Misc - JQ Playground
 Solved by **yappare**
 
 ## Question

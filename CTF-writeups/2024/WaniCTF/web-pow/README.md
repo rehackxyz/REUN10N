@@ -1,5 +1,5 @@
 # Web - Pow
-Solved by **aan**
+Solved by **aan**\
 Original writeup by aan - https://ilikeronnnnii.github.io/2024/06/24/wanictf/
 
 ## Question

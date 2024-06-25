@@ -1,5 +1,6 @@
 # Crypto - beginners_rsa
-Solved by **SungJinwoo**
+Solved by **SungJinwoo**\
+Full writeup can be seen here https://sungjinwoo.gitbook.io/wanictf-2024/cryptography
 
 ## Question
 Do you know RSA?

@@ -14,4 +14,4 @@ Flag format clarification: Use the full type, e.g. Avenue, Street, Road, etc., a
 https://www.google.com/maps/@42.347957,-71.0693561,3a,75y,265.3h,90.23t/data=!3m6!1e1!3m4!1sAeXv13HItMuZbXRVcJsFkg!2e0!7i16384!8i8192?coh=205409&entry=ttu
 
 ### Flag
-uiuctf{Arlington Street, Boston}
+`uiuctf{Arlington Street, Boston}`

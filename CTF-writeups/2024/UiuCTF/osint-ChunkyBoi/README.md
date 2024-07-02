@@ -12,7 +12,7 @@ Flag format clarification: The last digit of the first coordinate is even, and t
 ![Chal](chal.jpg)
 
 ## Solution
-Used Google Maps to locate the area as the warehouse looks the same, but the grass area didn't match perfectly. However, this is how we can confirm the location, making it likely that it is the area near Seattle Airport.
+Used Google Maps to locate the area as the warehouse looked the same, but the grass area didn't match perfectly. However, this is how we can confirm the location, making it likely that it is the area near Seattle Airport.
 https://www.google.com/maps/search/seattle+airport+air+force/@47.4605295,-122.3068376,87m/data=!3m1!1e3?entry=ttu
 ![Map](map.png)
 
@@ -20,6 +20,9 @@ Further search made us confirm that this is it
 https://www.google.com/maps/search/seattle+airport+air+force/@47.4605295,-122.3068376,87m/data=!3m1!1e3?entry=ttu
 
 Based on the image and location, and after conducting some research, the aircraft is identified as a Boeing C-17 Globemaster III. After attempting different coordinates, we finally managed to pinpoint the correct location.
+
+### Flag
+`uiuctf{Boeing C-17 Globemaster III, 47.462, -122.303}`
 
 ### Flag
 uiuctf{Boeing C-17 Globemaster III, 47.462, -122.303}

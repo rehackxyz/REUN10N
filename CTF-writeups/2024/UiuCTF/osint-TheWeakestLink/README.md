@@ -14,6 +14,6 @@ Open the Spotify app and check your friend activity (the web version does not sh
 ![Flag](activity.png)
 
 ### Flag
-uiuctf{7rU1Y_50N65_0F_7H3_5UMM3r_432013}
+`uiuctf{7rU1Y_50N65_0F_7H3_5UMM3r_432013}`
 
 

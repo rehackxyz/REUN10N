@@ -72,4 +72,4 @@ Submitted a crafted request to the /logout endpoint that pointing to the Flask s
 ![Flag](flag.png)
 
 ### Flag
-uiuctf{close_enough_nextjs_server_actions_welcome_back_php}
+`uiuctf{close_enough_nextjs_server_actions_welcome_back_php}`

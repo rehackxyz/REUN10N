@@ -20,4 +20,4 @@ The flag is found on the profile that has endorsed LISA.
 ![Linkedin](profile.jpeg)
 
 ### Flag
-uiuctf{0M160D_U1UCCH4N_15_MY_F4V0r173_129301}
+`uiuctf{0M160D_U1UCCH4N_15_MY_F4V0r173_129301}`

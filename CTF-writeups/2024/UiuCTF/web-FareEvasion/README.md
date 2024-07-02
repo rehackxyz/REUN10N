@@ -47,4 +47,4 @@ Use this forged token to authenticate as a conductor and obtain the flag.
 ![Flag](flag.png)
 
 ### Flag
-uiuctf{sigpwny_does_not_condone_turnstile_hopping!}
+`uiuctf{sigpwny_does_not_condone_turnstile_hopping!}`

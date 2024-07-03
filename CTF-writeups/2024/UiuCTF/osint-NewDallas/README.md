@@ -20,5 +20,11 @@ After multiple attempts to pinpoint different coordinates by exploring various i
 ![Map](map.png)
 https://www.google.com/maps/dir/Shangmadun+Residential+District,+Liangxi+District,+Wuxi,+Jiangsu,+China,+214003/IKEA,+Xishan+District,+Wuxi,+Wuxi,+China/@31.5786105,120.3837615,256m/data=!3m1!1e3!4m14!4m13!1m5!1m1!1s0x35b38e11348bb96f:0x9448930c94f36636!2m2!1d120.328087!2d31.583824!1m5!1m1!1s0x35b3917fb884a61f:0xfa3dd93eedacca5f!2m2!1d120.392663!2d31.581156!5i2!5m1!1e2?authuser=0&hl=en-MY&entry=ttu
 
+References:
+* https://www.chinaairlinetravel.com/metro/wuxi/map.html
+* https://rail.kychung.com/en/
+* https://www.youtube.com/watch?v=XsnhySs3v9E
+* Google translate and lens
+
 ## Flag 
 `uiuctf{31.579, 120.388}`

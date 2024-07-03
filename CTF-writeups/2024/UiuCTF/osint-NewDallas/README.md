@@ -13,7 +13,7 @@ Flag format clarification: Use three decimal points of precision, truncate, and 
 Initially, the suspected location was identified near Shanghai, China, based on the presence of wide roads, train tracks, and specific landmarks like a blue building rooftop.
 https://www.google.com/maps/place/31°13'09.4"N+121°28'00.2"E/@31.2187081,121.4666204,221a,35y,270h/data=!3m1!1e3!4m10!1m5!3m4!2zMzHCsDE0JzA0LjQiTiAxMjHCsDI3JzI0LjQiRQ!8m2!3d31.234567!4d121.456789!3m3!8m2!3d31.219282!4d121.466718!5m1!1e4?entry=ttu
 
-Further investigation gives some potential locations such as Shanghai Metro Line 2, Wuxi Line 2, or Shenzhen.
+Further investigation gives some potential locations such as Shanghai Metro Line 2, Wuxi Line 2, or Shenzhen. This was based on the train's color : green roof, line in the middle and black windows/doors.
 https://rail.kychung.com/en/category/chinese-metro-rails/
 
 After multiple attempts to pinpoint different coordinates by exploring various intersections and landmarks using resources like maps, metro system details, and videos, the correct coordinates were identified as `31.579, 120.388`.

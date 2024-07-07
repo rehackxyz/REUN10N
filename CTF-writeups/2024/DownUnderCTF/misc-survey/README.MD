@@ -1,11 +1,11 @@
-# Title
+# Survey
 Solved by **XXX**
 
 ## Question
-A perfect first challenge for beginners. Who said pirates can't ride trains...
+What did you love about DUCTF 2024, anything you didn't? Please let us know: fill out the survey.
 
 ## Solution
-
+Fille in the form and got the flag
 
 ### Flag
-`DUCTF{XXX}`
+`DUCTF{hop3_u-had_fun}`

@@ -1,11 +1,11 @@
-# Title
+# Parrot the Emu
 Solved by **XXX**
 
 ## Question
-A perfect first challenge for beginners. Who said pirates can't ride trains...
+It is so nice to hear Parrot the Emu talk back.
 
 ## Solution
 
 
 ### Flag
-`DUCTF{XXX}`
+`DUCTF{PaRrOt_EmU_ReNdErS_AnYtHiNg}`

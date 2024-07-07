@@ -1,7 +1,7 @@
 # Baby First Forensics
 
 Solved by **zachwong_02**\
-**warlocksmurf** also created the full writeup here https://warlocksmurf.github.io/posts/ductf2024/#bad-policies-forensics
+**warlocksmurf** also created the full writeup here https://warlocksmurf.github.io/posts/ductf2024/#babys-first-forensics-forensics
 
 ## Question
 They've been trying to breach our infrastructure all morning! They're trying to get more info on our covert kangaroos! We need your help, we've captured some traffic of them attacking us, can you tell us what tool they were using and its version?

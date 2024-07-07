@@ -10,7 +10,6 @@ decrypt tls > obtain credentials for a login page > cant login cuz invalid JWT >
 
 ![1](https://i.ibb.co/NpKJTLM/Screenshot-2024-07-07-232625.png)
 
-Looking into HTTP2? Why HTTP2 because it was encrypted before.
 ![2](https://i.ibb.co/h1NYrpt/Screenshot-2024-07-07-232756.png)
 
 ![3](https://i.ibb.co/NskNJvv/Screenshot-2024-07-07-233316.png)

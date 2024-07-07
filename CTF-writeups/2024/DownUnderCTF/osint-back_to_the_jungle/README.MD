@@ -2,7 +2,7 @@
 Solved by **SungJinwoo**
 
 ## Question
-A perfect first challenge for beginners. Who said pirates can't ride trains...
+Did MC Fat Monke just drop a new track????? 👀👀👀.
 
 ## Solution
 There is hint in the challenge which is MC Fat Monke drop a new song.\

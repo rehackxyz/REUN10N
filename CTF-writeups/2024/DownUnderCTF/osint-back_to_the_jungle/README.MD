@@ -5,6 +5,9 @@ Solved by **SungJinwoo**
 A perfect first challenge for beginners. Who said pirates can't ride trains...
 
 ## Solution
+There is hint in the challenge which is MC Fat Monke drop a new song.\
+Search MC Fat Monke in YouTube. \
+
 Go to https://www.youtube.com/watch?v=jmhn3IMLQyM, look at timeframe 2.34. There's an URL https://average-primate-th.wixsite.com/mc-fat-monke-appreci
 
 The flag is in that website

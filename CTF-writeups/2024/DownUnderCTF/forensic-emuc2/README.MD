@@ -7,6 +7,7 @@ As all good nation states, we have our own malware and C2 for offensive operatio
 
 ## Solution
 decrypt tls > obtain credentials for a login page > cant login cuz invalid JWT > get the real JWT from one of its upload files in `/api/env` > encode the real JWT and use it when logging in
+
 ![1](https://i.ibb.co/NpKJTLM/Screenshot-2024-07-07-232625.png)
 
 Looking into HTTP2? Why HTTP2 because it was encrypted before.

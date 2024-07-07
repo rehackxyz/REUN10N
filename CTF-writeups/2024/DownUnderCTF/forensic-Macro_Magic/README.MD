@@ -1,5 +1,5 @@
 # Macro Magic
-Solved by **warlocksmurf**
+Solved by **warlocksmurf**\
 Full writeup is available at https://warlocksmurf.github.io/posts/ductf2024/#macro-magic-forensics
 
 ## Question

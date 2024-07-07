@@ -18,7 +18,7 @@ We found nothing sus in Linkedin, and the organiser mentioned it does not relate
 
 We watched the short marketing video and the hint mentioned about "slapped together", and we found the animals (bottom right), means we were at the right track. We noted there's something on top left of the video.
 
-!(monke)[https://i.ibb.co/cv9MCYP/Screenshot-2024-07-07-at-9-40-12-PM.png]
+![monke](https://i.ibb.co/cv9MCYP/Screenshot-2024-07-07-at-9-40-12-PM.png)
 
 ### Flag
 `DUCTF{doing_a_bit_of_marketing}`

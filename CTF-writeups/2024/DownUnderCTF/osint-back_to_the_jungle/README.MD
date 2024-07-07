@@ -11,7 +11,7 @@ Search MC Fat Monke in YouTube. \
 Go to https://www.youtube.com/watch?v=jmhn3IMLQyM, look at timeframe 2.34. There's an URL https://average-primate-th.wixsite.com/mc-fat-monke-appreci
 
 The flag is in that website
-![flag](https://ibb.co/5L6H0pZ)
+![flag](https://i.ibb.co/M7s0vwd/Screenshot-2024-07-08-003653.png)
 
 
 ### Flag

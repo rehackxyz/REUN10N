@@ -1,8 +1,10 @@
-# Title
-Solved by **XXX**
+# cityviews
+Solved by **yappare**
 
 ## Question
-A perfect first challenge for beginners. Who said pirates can't ride trains...
+After having to go on the run, I've had to bunker down. Which building did I capture this picture from?
+
+NOTE: Flag is case-insensitive and requires placing inside DUCTF{}! e.g DUCTF{building_name}
 
 ## Solution
 ![cityview](https://i.ibb.co/q0JVV3v/cityviews.jpg)

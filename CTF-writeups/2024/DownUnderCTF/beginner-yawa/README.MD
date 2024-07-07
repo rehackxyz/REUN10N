@@ -1,5 +1,5 @@
 # Yawa
-Solved by **CapangJabba**
+Solved by **[CapangJabba](https://www.linkedin.com/in/gnapaC/)**
 
 ## Question
 Yet another welcome application.

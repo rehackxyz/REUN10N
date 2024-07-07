@@ -1,4 +1,5 @@
-# Title
+# They're Making Decoys
+
 Solved by **yappare**
 
 ## Question

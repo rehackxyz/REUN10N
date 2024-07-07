@@ -12,4 +12,4 @@ The image !(lives)[https://i.ibb.co/XZY7yLy/bridget.png] looks like somewhere in
 https://www.google.com/maps/search/zouk+wine+bar/@1.2900465,103.8361347,199m/data=!3m1!1e3?entry=ttu
 
 ### Flag
-`UCTF{four_points}`
+`DUCTF{four_points}`

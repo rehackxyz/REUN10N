@@ -1,5 +1,5 @@
 # Pwn - do_not_rewrite
-Solved by **CapangJabba**
+Solved by **[CapangJabba](https://www.linkedin.com/in/gnapaC/)**
 
 ## Question
 Be careful with the canary.

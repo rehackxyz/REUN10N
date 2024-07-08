@@ -1,5 +1,5 @@
 # Pwn - do_not_rewrite2
-Solved by **CapangJabba**
+Solved by **[CapangJabba](https://www.linkedin.com/in/gnapaC/)**
 
 ## Question
 show_flag() has disappeared :<\

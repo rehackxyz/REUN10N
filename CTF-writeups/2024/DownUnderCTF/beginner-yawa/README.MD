@@ -281,7 +281,7 @@ io.interactive()
 
 ##### Execution
 
-![Flag](/assets/flag.png)
+![Flag](assets/flag.png)
 
 ##### Full Script
 

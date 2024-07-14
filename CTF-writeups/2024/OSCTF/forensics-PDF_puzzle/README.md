@@ -1,11 +1,11 @@
-# Title
-Solved by **XXX**
+# PDF Puzzle
+Solved by **zachwong_02**
 
 ## Question
-TBC
+It took me so much time to write this pdf (for real, I'm not lying) but I have hidden the flag in this and you're tasked with finding it. Prove your pdf knowledge here forensic people.
 
 ## Solution
-
+metadata
 
 ### Flag
-`OSCTF{XXX}`
+`OSCTF{H3il_M3taD4tA}`

@@ -1,11 +1,11 @@
-# Title
-Solved by **XXX**
+# Gophers Language
+Solved by **CapangJabba**
 
 ## Question
-TBC
+I know go is not a popular language, so I decided of creating a reversing challenge out of it. I'm sure now go will overtake java!!
 
 ## Solution
-
+Reverse the binary and search `OSCTF` string
 
 ### Flag
-`OSCTF{XXX}`
+`OSCTF{Why_G0_S0_H4rd}`

@@ -1,11 +1,11 @@
-# Title
-Solved by **XXX**
+# Weird Video
+Solved by **yappare**
 
 ## Question
-TBC
+Hey! I've found this mp4 file lying around my computer, but weird I'm not able to open it? Here, have a look.
 
 ## Solution
-
+`strings content.mp4`
 
 ### Flag
-`OSCTF{XXX}`
+`OSCTF{T3xt_3DiT0r_FTW!}`

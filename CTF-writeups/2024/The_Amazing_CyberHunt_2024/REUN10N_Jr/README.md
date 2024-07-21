@@ -1,9 +1,3 @@
----
-title: The Amazing CyberHunt Writeup
-author: whymir
-date: 2024-07-21 00:00:00
-categories: [Forensics]
----
 
 # The Amazing CyberHunt Writeup
 
@@ -214,12 +208,7 @@ Only this jpeg looked interesting to me. Since most challenges like to use `thum
 ### Sus http
 ### Riddle is Fun
 
----
-title: The Amazing CyberHunt Writeup
-author: vicevirus
-date: 2024-07-21 00:00:00
-categories: [Binary Exploitation]
----
+# Binary exploitation
 
 ## Bin100
 

@@ -213,3 +213,90 @@ Only this jpeg looked interesting to me. Since most challenges like to use `thum
 ### Ole - Dirty Laundry
 ### Sus http
 ### Riddle is Fun
+
+---
+title: The Amazing CyberHunt Writeup
+author: vicevirus
+date: 2024-07-21 00:00:00
+categories: [Binary Exploitation]
+---
+
+## Bin100
+
+Decompile the provided file using `dnspy` too and found the seed defined as `123456`. Modify the code to loop through secret.
+
+```
+using System;
+namespace UTAR_bin000
+{
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to UTAR bin100");
+
+            // Loop through the entire secret array
+            for (int i = 0; i < Program.secret.Length; i++)
+            {
+                int num = Program.getSuperL33tNumber();
+
+                int value = (int)(Program.secret[i] ^ (byte)num);
+ 
+                Console.Write(Convert.ToChar(value));
+            }
+
+            Console.WriteLine();
+        }
+
+        private static int getUltraSuperL33tWatchaNumber()
+        {
+            return new Random().Next(1, 38);
+        }
+
+        private static int getSuperL33tNumber()
+        {
+            return Program.random.Next(1, 38);
+        }
+
+        private static Random random = new Random(123456);
+
+        private static byte[] secret = new byte[]
+        {
+            95, 80, 67, 92, 100, 32, 58, 56, 116, 40, 103, 57, 37, 52, 47, 64,
+            127, 45, 35, 48, 42, 99, 120, 71, 52, 104, 101, 99, 44, 118, 108, 36,
+            71, 49, 19, 96, 120, 110
+        };
+    }
+}
+```
+
+## Bin200
+
+```
+def xor_check():
+    checks = [
+        (0, 0x6B, 62),
+        (1, 0x75, 33),
+        (2, 0x65, 36),
+        (3, 0x68, 58),
+        (4, 0x78, 3),
+        (37, 0x78, 5)
+    ]
+    
+    flag = [''] * 38
+    for index, xor_value, expected in checks:
+        flag[index] = chr(expected ^ xor_value)
+    
+    stuff = [
+        ord(c) for c in 'f17b245513f53cef837b54g9:7b2:99b'
+    ]
+    
+    for i in range(32):
+        flag[i + 5] = chr(stuff[i] - 1)
+    
+    return ''.join(flag)
+
+if __name__ == "__main__":
+    flag = xor_check()
+    print(flag)
+```

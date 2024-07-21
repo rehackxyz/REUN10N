@@ -9,6 +9,8 @@ categories: [Forensics]
 
 This write-up documents our journey through The Amazing Cyber Hunt 2024 as team **RE:UN10N Jr**, comprising myself (whymir), Sara (ssi51), and Firdaus (vicevirus). We tackled various challenges with determination and teamwork.
 
+Also available at https://whymir.github.io/posts/The-Amazing-CyberHunt-Writeup/
+
 ## Files
 
 All challenge are given. Refer to this [link](https://pixeldrain.com/u/Cy7ZxjJa).

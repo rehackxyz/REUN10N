@@ -8,7 +8,9 @@ i'm a dog mom i 🩷 dogs
 
 Find where this picture was taken; submit your flag as ictf, both rounded to three decimal places. (example: ictf{-12.345_66.533})
 ## Solution
-Building likely Cathedral of Learning.
+Building likely Cathedral of Learning. Based on this https://www.flickr.com/photos/irisphotos/5850869803
+
+
 
 ### Flag
 `ictf{40.444_-79.954}`

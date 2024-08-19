@@ -1,11 +1,12 @@
 # Survey
-Solved by **XXX**
+Solved by **XXX**\
+Unknown. duh.
 
 ## Question
 What did you love about DUCTF 2024, anything you didn't? Please let us know: fill out the survey.
 
 ## Solution
-Fille in the form and got the flag
+Filled in the form and got the flag
 
 ### Flag
 `DUCTF{hop3_u-had_fun}`

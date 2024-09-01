@@ -1,6 +1,6 @@
 # Baby Pybash
 
-Solved by **XXX**
+Solved by **yappare**
 
 ## Question
 I made a very secure bash terminal in Python. I don't think anyone can break in!

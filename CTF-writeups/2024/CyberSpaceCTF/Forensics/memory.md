@@ -1,5 +1,5 @@
 # Memory
-Solved by **whymir** and **0x251e**
+Solved by **whymir** and **0x251e**\
 Assisted by **warlocksmurf**
 
 ## Question

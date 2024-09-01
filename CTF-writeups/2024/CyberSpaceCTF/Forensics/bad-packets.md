@@ -12,7 +12,7 @@ Analysing the pcap given, we observed few key points:
 
 Both of these hinted us this might be Trevor C2 payloads.
 
-This was helped by reading the article by Nasreddine Bencherchali
+This was helped by reading the article by Nasreddine Bencherchali\
 Reference: https://nasbench.medium.com/understanding-detecting-c2-frameworks-trevorc2-2a9ce6f1f425
 
 Extracting all HTTP packets and using the TrevorC2 cyberchef recipe, https://github.com/1tchyBa11z/trevorc2-cyberchef we managed to find the flag.

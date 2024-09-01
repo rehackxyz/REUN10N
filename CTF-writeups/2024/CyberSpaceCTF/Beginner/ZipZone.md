@@ -15,4 +15,4 @@ ln -s ../../../tmp/flag.txt itik
 - got flag
 
 ### Flag
-`CSCTF{5yml1nk5_4r3_w31rd}``
+`CSCTF{5yml1nk5_4r3_w31rd}`

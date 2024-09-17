@@ -20,40 +20,6 @@ M*=9;f(i())
 print(open('flag.txt').read())
 ```
 
-Flag: `filter'd
-```
-first input
-i=input;f(i())
-
-second input
-M*=9;f(i())
-
-third input
-print(open('flag.txt').read())
-
-flag:`filter'd
-```
-first input
-i=input;f(i())
-
-second input
-M*=9;f(i())
-
-third input
-print(open('flag.txt').read())
-
-flag
-filter'd
-```
-first input
-i=input;f(i())
-
-second input
-M*=9;f(i())
-
-third input
-print(open('flag.txt').read())
-
 Flag: `jail{can_you_repeat_that_for_me?_aacb7144d2c}`
 
 

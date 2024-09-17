@@ -1,5 +1,7 @@
 # blind-calc
 
+Solved by: @arifpeycal
+
 - Category: mainstream,bash,introductory
 - Description: calculator using arithmetic expansion in bash
 

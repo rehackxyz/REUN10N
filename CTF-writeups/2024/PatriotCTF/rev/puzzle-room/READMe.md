@@ -13,4 +13,23 @@ At the center of the room lies the key to venturing further into the tomb, along
 
 - Challenge File: puzzle\_room.py
 
+## Tricks to solve:
+
+- Dont step on same words
+- Dont step on same column
+- Dont step on into shrine with W
+- Dont step on sphinx
+
+With these steps, you will get these combination of movements to get the flag:
+- SW
+- SW
+- SW
+- NW
+- SW
+- NW
+- W
+- N
+
+**Flag:** `pctf{Did_you_guess_it_or_apply_graph_algorithms?}`
+
 

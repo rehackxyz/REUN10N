@@ -2,7 +2,7 @@
 
 We played PatriotCTF 2024 and managed to get 113th place. 
 
-CTFTime: [https://ctftime.org/event/2426]
+CTFTime: [https://ctftime.org/event/2426](https://ctftime.org/event/2426)
 
 ![patriotctf](patriotctf.png)
 
@@ -33,6 +33,6 @@ Challenges solved:
 - Bigger is Better (crypto)
 - Porcelain Throne (osint)
 
-Shoutout to players: hikki, Cookies to SELL, arifpeycal, PLSSKY, Who1sm3, okay, 0x251e , Zeqzoq 
+Shoutout to players: @hikki, @Cookies to SELL, @arifpeycal, @PLSSKY, @Who1sm3, @okay, @0x251e, @Zeqzoq 
 
 

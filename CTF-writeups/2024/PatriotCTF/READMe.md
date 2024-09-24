@@ -4,7 +4,7 @@ We played PatriotCTF 2024 and managed to get 113th place.
 
 CTFTime: [https://ctftime.org/event/2426](https://ctftime.org/event/2426)
 
-![patriotctf](patriotctf.png)
+![patriotctf](https://i.ibb.co/fkPCB2g/pctf-cert2.png)
 
 Challenges solved:
 - RTL Easy (misc)

@@ -1,6 +1,6 @@
 ## PatriotCTF 2024
 
-We played PatriotCTF 2024 and managed to get 113th place. 
+We played PatriotCTF 2024 and managed to get 112th place. 
 
 CTFTime: [https://ctftime.org/event/2426](https://ctftime.org/event/2426)
 

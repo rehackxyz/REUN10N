@@ -30,6 +30,17 @@ With these steps, you will get these combination of movements to get the flag:
 - W
 - N
 
+Summary of Game Rules:\
+Stay within the grid boundaries.\
+Avoid stepping on (3, 9) (the tile where the door landed).\
+Avoid stepping on any "SPHINX" tiles.\
+Do not revisit any tile you've already stepped on.\
+Do not step on tiles with the same symbol more than once (except "Shrine").\
+Ensure no two tiles in your path share the same column unless you're on a "Shrine" tile.\
+The path must form a valid decryption key on "Shrine" tiles to win the game.\
+tried to find a path that will include all the words\
+snake arch plant bug staff foot urn Shrine
+
 **Flag:** `pctf{Did_you_guess_it_or_apply_graph_algorithms?}`
 
 

@@ -12,6 +12,7 @@ We want to know precisely where the aft end of northernmost submarine attached t
 Submission format: PCTF{three.position.words.class\_name} Example submission: PCTF{employing.broken.imports.sierra}
 
 Challenge Image:
+
 ![sbububmarine](sbububmarine.png)
 
 ### Solution: 

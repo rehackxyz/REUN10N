@@ -18,6 +18,10 @@ With Google reverse image search, many result show similar images showing the lo
 
 ### Step 2: Find the Business Location where the images was taken from
 
+Result: [Convene](https://maps.app.goo.gl/8tttgXcX8RBHraCH9)
 
+![convene](convene.png)
+
+**Flag:** PCTF{Convene}
 
 

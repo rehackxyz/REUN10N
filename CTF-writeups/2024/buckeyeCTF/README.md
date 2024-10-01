@@ -8,7 +8,7 @@ CTFTime: [https://ctftime.org/event/2449](https://ctftime.org/event/2449)
 
 Challenges solved:
 
-forensics:reduce_recycle\ 
+forensics:reduce_recycle \
 forensics:duck-pics \
 forensics:unknown 
 

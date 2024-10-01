@@ -21,7 +21,7 @@ With this [source code](https://raw.githubusercontent.com/TeamRocketIst/ctf-usb-
 
 ```bash
 $ python3 usbkeyboard.py dump | grep bctf
-bctf{SSteASt0p_s3nd1Ng_m3_DuCK_p1c$}
+bctf{St0p_s3nd1Ng_m3_DuCK_p1c$}
 ```
 
 **Flag:** `bctf{St0p_s3nd1Ng_m3_DuCK_p1c$}`

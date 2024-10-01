@@ -8,27 +8,27 @@ CTFTime: [https://ctftime.org/event/2449](https://ctftime.org/event/2449)
 
 Challenges solved:
 
-forensics:reduce_recycle 
-forensics:duck-pics 
+forensics:reduce_recycle\ 
+forensics:duck-pics \
 forensics:unknown 
 
-beginner-pwn:runway0 
-beginner-pwn:runway1
-beginner-pwn:runway2 
+beginner-pwn:runway0 \
+beginner-pwn:runway1\
+beginner-pwn:runway2 \
 beginner-pwn:color 
 
-misc:git goo 
+misc:git goo \
 misc:sanity 
 
-rev:flagwatch 
+rev:flagwatch \
 rev:text-adventure
 
-crypto:rsa 
+crypto:rsa \
 crypto:xnor 
 
-web:SSFS 
-web:quotes
+web:SSFS \
+web:quotes\
 web:fu
 
-Thanks for playing with us!
+Thanks for playing with us!\
 @OS1RIS, @Cookies to SELL, @okay @0x251e @SungJinwoo, @n3r, @vicevirus, @PLSSKY and @0x251e

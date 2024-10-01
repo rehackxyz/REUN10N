@@ -1,4 +1,4 @@
-## PatriotCTF 2024
+## BuckeyeCTF 2024
 
 We played BuckeyeCTF 2024 and managed to get 91st place (or 95th based on CTFTime)
 

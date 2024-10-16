@@ -21,6 +21,7 @@ I started by examining the Facebook account linked in the challenge. Most of the
 ### Step 2: Watermarks in the Images
 
 Upon reviewing the provided images, I noticed that all of them had a watermark reading "indonesiaclubbing.com." I decided to investigate this by visiting the Indonesiaclubbing website. Unfortunately, browsing through the site didn’t yield any useful information that directly helped identify the nightclub.
+
 ![image](https://github.com/user-attachments/assets/ce8c978c-4145-4666-8d7c-baa8c0ec655c)
 
 ### Step 3: Reverse Image Search

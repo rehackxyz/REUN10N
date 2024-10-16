@@ -34,4 +34,9 @@ After activating the VPN, I proceeded to search for the main headline visible in
 
 Upon viewing the full article, I quickly found the key piece of information: the newspaper's publication date was clearly visible at the top left corner of the page, confirming the timeline of the event.
 
+**Key Learnings:**
+- When reverse image searches fail, identifying the language of the content can provide valuable clues for further investigation.
+- Utilizing region-specific resources such as national archives (in this case, the Dutch Delpher archive) can be critical for historical challenges.
+- A VPN may be necessary to access resources that are geo-blocked.
+
 **Flag:** `TCP1P{17 December 1983}`

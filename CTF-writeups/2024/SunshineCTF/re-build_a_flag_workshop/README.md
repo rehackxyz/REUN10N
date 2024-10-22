@@ -19,8 +19,8 @@ x/16xb 0x555555558010
 
 @ks said:
 so basically you need to satisfy 3 things
-first part of the flag = the wordlist that contains `decide`
-2nd part of the flag = md5 value (`gandalf`)
-3rd part of the flag = `chompy` 
+1. first part of the flag = the wordlist that contains `decide`
+2. 2nd part of the flag = md5 value (`gandalf`)
+3. 3rd part of the flag = `chompy` 
 
 **Flag:** `sun{all_we_have_to_decide_is_what_to_do_with_the_time_given_to_us-gandalf-chompy}`

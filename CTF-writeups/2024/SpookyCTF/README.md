@@ -6,7 +6,7 @@ We played Spooky CTF 2024 and ranked 14th place.
 CTFTime: [https://ctftime.org/event/2516](https://ctftime.org/event/2516)
 
 Kudos to our solvers:
-@OS1R1S, @arifpeycal, @n3r, @hikki, @vicevirus @Who1sm3, @ad3n, @aan, @Z3roo
+@OS1R1S, @arifpeycal, @n3r, @hikki, @vicevirus @Who1sm3, @ad3n, @aan, @Z3roo, @FeiNafali
 
 ### Solves:
 

@@ -2,7 +2,7 @@
 
 We played Hack the BlueHens CTF 2024 organised by University of Delaware and ranked 25th place. 
 
-[https://i.ibb.co/bgx08Ck/bluhens.png](https://i.ibb.co/bgx08Ck/bluhens.png)
+![https://i.ibb.co/bgx08Ck/bluhens.png](https://i.ibb.co/bgx08Ck/bluhens.png)
 
 CTFTime: [https://ctftime.org/event/2512](https://ctftime.org/event/2512)
 

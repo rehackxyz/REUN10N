@@ -12,4 +12,4 @@ When you get past the puzzle, you now face a classic encryption / old-school ste
 ## Solution:
 
 
-**Flag:** 
+**Flag:`UDCTF{PIXELATED}`** 

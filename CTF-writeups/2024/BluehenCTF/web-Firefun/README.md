@@ -27,7 +27,7 @@ Our fireplace company was all set to take off for the moon, then we had to shut 
 
 		// Firebase configuration
 		const firebaseConfig = {
-			apiKey: "AIzaSyBX_qnDyJ9pl_csJUprUywtAh9lUbVqPFU",
+			apiKey: "--removed--",
 			authDomain: "udctf24.firebaseapp.com",
 			databaseURL: "https://udctf24-default-rtdb.firebaseio.com",
 			projectId: "udctf24",
@@ -77,7 +77,7 @@ Our fireplace company was all set to take off for the moon, then we had to shut 
 		}
 
 		// Attempt email and password login, then check storage and database if successful
-		signInWithEmailAndPassword(auth, "avishkank@gmail.com", "password")
+		signInWithEmailAndPassword(auth, "avi--removed--ank@gmail.com", "--removed--")
 			.then((userCredential) => {
 				const uid = userCredential.user.uid;
 				console.log("User signed in:", uid);

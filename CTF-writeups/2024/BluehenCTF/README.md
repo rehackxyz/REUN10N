@@ -4,6 +4,12 @@ We played Hack the BlueHens CTF 2024 organised by University of Delaware and ran
 
 ![https://i.ibb.co/bgx08Ck/bluhens.png](https://i.ibb.co/bgx08Ck/bluhens.png)
 
+First bloods!
+
+![1](https://i.ibb.co/8D5L6K7/Screenshot-2024-11-10-at-9-04-18-PM.png)
+
+![2](https://i.ibb.co/0f52pvd/Screenshot-2024-11-10-at-9-04-25-PM.png)
+
 CTFTime: [https://ctftime.org/event/2512](https://ctftime.org/event/2512)
 
 Kudos to our solvers:

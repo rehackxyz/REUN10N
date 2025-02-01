@@ -1,9 +1,8 @@
-# UOFTCTF 2025
+# x3CTF 2025 (feat. mvm)
 
-UofTCTF 2025 is the annual capture-the-flag competition organised by the University of Toronto CTF team.
+x3CTF 2025 (feat. mvm)
 
-CTFTime: [https://ctftime.org/event/2570](https://ctftime.org/event/2570)
-
+CTFTime: [https://ctftime.org/event/2570](https://ctftime.org/event/2467/)
 
 ### Solves:
 

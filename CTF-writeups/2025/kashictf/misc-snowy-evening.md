@@ -1,4 +1,4 @@
-# ## SNOWy Evening
+# SNOWy Evening
 Solved by: @Identities
 
 ### Question:

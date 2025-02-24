@@ -77,4 +77,4 @@ for i in range(drops):
         break
 ```
 
-**Flag:** `lactf{mY_b4Ll_w3Nt_P1iNk_pL0Nk_4nD_n0W_1m_br0K3}
+**Flag:** `lactf{mY_b4Ll_w3Nt_P1iNk_pL0Nk_4nD_n0W_1m_br0K3}`

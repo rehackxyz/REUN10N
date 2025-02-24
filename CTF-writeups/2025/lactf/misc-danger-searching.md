@@ -13,6 +13,7 @@ Flag is the full 10 digit [plus code](https://plus.codes/map) **containing the s
 1. Find the list of public trails in hawaii in this [link]([https://hawaiitrails.ehawaii.gov/trails/#/](https://hawaiitrails.ehawaii.gov/trails/#/ "https://hawaiitrails.ehawaii.gov/trails/#/))
 2. Next filter the trails based on the warning of the trails, and if you put all 4 of the warning given, it shows only 1 trail with all of the warnings, which is Pololu trial and you can find the plus code from using the address.
 3. This is the picture that have all 4 warnings:
+
 ![danger-searching](danger-searching.png)
 
 **Flag:** `lactf{73G66738+9C}`

@@ -1,5 +1,6 @@
-Solved by: @OS1R1S
+# Snake I - Just One More Apple
 
+Solved by: @OS1R1S
 ### Question:
 It's a simple SNES game of Snake… or is it? Each apple you eat reveals a letter, but before you can spell out the full flag, the apples run out.
 
@@ -14,5 +15,5 @@ Can you outsmart the limitations and claim your prize?
 Here is how we can extract the hex value from the memory view and notice the hex value changes per apple taken.
 ![rev2](rev2.gif)
 
-**Flag:** `KALMAR{EASY_PEASY_65816_SQUEEZY}
+**Flag:** `KALMAR{EASY_PEASY_65816_SQUEEZY}`
 

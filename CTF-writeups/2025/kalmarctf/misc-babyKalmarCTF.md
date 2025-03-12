@@ -29,19 +29,19 @@ Spin up your own personal babykalmarCTF here: [https://lab1.kalmarc.tf/](https:/
 	- The Last Step (Impossible)
 	
 2. Welcome Flag's solution: 
-	![[babykalmar1.png]]
+	![babykalmar1.png](babykalmar1.png)
 	**Flag:** `babykalmar{welcome_to_babykalmar_CTF}`
 	
 3. My First Flagchecker's solution:
 	 - ltrace will show the strcmp value 
-	 ![[babykalmar2.png]]
+	 ![babykalmar2.png](babykalmar2.png)
 	 - In disassembler, the string value will show in the .rodata section
-	 ![[babykalmar3.png]]
+	 ![babykalmar3.png](babykalmar3.png)
 	**Flag:** `babykalmar{string_compare_rev_ayoooooooo}`
 	
 4. THE OSINT CHALLENGE's solution:
 	- Challenge Image given:
-	  ![[babykalmar4.png]]
+	  ![babykalmar4.png](babykalmar4.png)
 	- Using Google Images, which show is a Department of Computer Science, University in Aarhus, Denmark
 	- The city which is located is `aarhus`
 	- **Flag:** `babykalmar{aarhus}`

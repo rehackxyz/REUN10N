@@ -10,6 +10,7 @@ Can you outsmart the limitations and claim your prize?
 
 ### Solution:
 - Use mesen emulator's memory viewer to freeze points. The every collected apple was +02 in hex. $1A was the address. if die, just change the last point.
+
 ![rev1.png](rev1.png)
 
 Here is how we can extract the hex value from the memory view and notice the hex value changes per apple taken.

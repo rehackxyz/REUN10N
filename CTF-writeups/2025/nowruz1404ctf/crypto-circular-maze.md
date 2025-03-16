@@ -1,5 +1,5 @@
 # Circular Maze
-
+Solved by: @hikki
 ### Question:
 you got plenty of information, now get crackin!!
 

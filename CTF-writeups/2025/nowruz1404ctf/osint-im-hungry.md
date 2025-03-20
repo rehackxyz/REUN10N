@@ -9,7 +9,7 @@ You might need to use [this](https://renderstuff.com/tools/360-panorama-web-view
 Flag example: `FMCTF{+15554443388}`
 
 The challenge image:
-![[Pasted image 20250319221340.png]]
+![osint-imhungry.png](osint-imhungry.png)
 
 ### Solution:
 The location of the McDonald from the image is [here](https://g.co/kgs/1DxRUzE)

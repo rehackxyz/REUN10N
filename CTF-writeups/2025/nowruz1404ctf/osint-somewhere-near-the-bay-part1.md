@@ -9,7 +9,7 @@ What's the location's What3Words? (don't put `\\\` inside the flag)
 You might need to use [this](https://renderstuff.com/tools/360-panorama-web-viewer/) or [this](https://photo-sphere-viewer.js.org/playground.html)
 
 The challenge image:
-![[Pasted image 20250319225251.png]]
+![osint-somewhere-near-the-bay1.png](osint-somewhere-near-the-bay1.png)
 
 ### Solution:
 Here is the What3Words map location: https://what3words.com/hedge.present.shape

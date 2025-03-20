@@ -9,7 +9,7 @@ Your task is to find the ID of the user who made this revelation.
 By the way, I almost forgot to mention that this image is all we have from the first project.
 
 The challenge image:
-![[Pasted image 20250319235619.png]]
+![osint-shipcoin.png](osint-shipcoin.png)
 
 ### Solution:
 Here are the references that reveal the North Korea scam currency:

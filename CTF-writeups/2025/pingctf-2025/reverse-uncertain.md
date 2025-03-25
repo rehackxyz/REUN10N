@@ -51,4 +51,4 @@ print(cleaned_string)
 
 Flag: `ping{S0_much_IF5_17_1s_4lm057_A1}`
 
-Solved by: yappare
+Solved by: benkyou

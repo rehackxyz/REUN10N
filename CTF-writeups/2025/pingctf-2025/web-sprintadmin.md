@@ -26,4 +26,4 @@ Cookie: connect.sid=s%3AqkgniFDpwODBvegOBjGQOYONDJSF8nP_.UBvyrwUAWyLhoOrF75C2mub
 
 Flag: `ping{Spr1n7_T3ch_@dm1n_fl@G}`
 
-Solved by: yappare
+Solved by: OS1RIS

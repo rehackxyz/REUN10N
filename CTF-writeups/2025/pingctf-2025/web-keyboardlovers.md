@@ -14,4 +14,4 @@
 
 Flag: `pingCTF{1_0n1y_u53_4_m0u53_4nyw4y}`
 
-Solved by: benkyou
+Solved by: yappare

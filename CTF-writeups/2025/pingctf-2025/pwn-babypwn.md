@@ -36,4 +36,4 @@ io.interactive()
 
 Flag: `ping{b3g1nn3r_fr13nd1y_bu773r_0v3rfl0w}`
 
-Solved by: w6rstaimn
+Solved by: yappare

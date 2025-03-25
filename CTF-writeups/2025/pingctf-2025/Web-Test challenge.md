@@ -1,4 +1,6 @@
-# Heading 1
+```
+<?php echo 1; ?>
+```
 ## Heading 2
 ### Heading 3
 

@@ -5,4 +5,4 @@ gr1d solved this manually. Goat.
 
 Flag: `ping{Silicon_Is_Talking_To_Me}`
 
-Solved by: yappare
+Solved by: gr1d

@@ -10,4 +10,4 @@ print(rev(e).decode())```
 Flag: `ENO{R3V3R53_3NG1N33R1NG_M45T3R!!!`
 
 
-Solved by: yappare
+Solved by: OS1R1S

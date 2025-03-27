@@ -48,4 +48,4 @@ Seed: 10, Flag: ENO{5CR4M83L3D_3GG5_4R3_1ND33D_T45TY!!!}
 Flag: `ENO{5CR4M83L3D_3GG5_4R3_1ND33D_T45TY!!!}`
 
 
-Solved by: yappare
+Solved by: OS1R1S

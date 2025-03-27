@@ -4,4 +4,4 @@
 
 Flag: `ENO{USB_ETHERNET_ADAPTER_ARE_COOL_N!C3}`
 
-Solved by: yappare
+Solved by: OS1R1S

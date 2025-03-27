@@ -21,4 +21,4 @@ print("Response Text:", response.text)
 Flag: `ENO{T3M_Pl4T_3S_4r3_S3cUre!!}`
 
 
-Solved by: yappare
+Solved by: vicevirus

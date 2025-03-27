@@ -49,4 +49,4 @@ print(long_to_bytes(m))
 Flag: `ENO{1_l0ve_7h3_pr1me_numb3r_the0r3m}`
 
 
-Solved by: yappare
+Solved by: hikki

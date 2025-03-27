@@ -12,4 +12,4 @@ b1,rgb,lsb,xy       .. text: "ENO{57394n09r4phy_15_w4y_c00l3r_7h4n_p0rn06r4phy}
 Flag:`ENO{57394n09r4phy_15_w4y_c00l3r_7h4n_p0rn06r4phy}`
 
 
-Solved by: yappare
+Solved by: OS1R1S

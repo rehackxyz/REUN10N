@@ -1,5 +1,5 @@
-Solution
-Go to RenPy source file, we need to find shoretst path to traverse all 19 cloud. Start at cloud0, always fly to the closest unvisited cloud, and repeat until all clouds are visited. Then return to cloud0.
+# Solution
+Go to `RenPy` source file, we need to find shortest path to traverse all 19 cloud. Start at `cloud0`, always fly to the closest unvisited cloud, and repeat until all clouds are visited. Then return to `cloud0`.
 
 When you get the correct path, then you can decode the flag.
 ```

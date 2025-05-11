@@ -46,4 +46,4 @@ Flag: `BtSCTF{m0nk3y_tYpE!!1!!oneone!}`
 ## Referrence
 https://afnom.net/wtctf/2019/the_story_of_a_monkey/
 
-Solved by: 6e3372
+Solved by: n3r

@@ -1,4 +1,4 @@
-### Sol  
+# Solution  
 
 Unzip quartet.z01 with 7zip and will get quartet.jpeg  
 `strings` and `grep` flag  

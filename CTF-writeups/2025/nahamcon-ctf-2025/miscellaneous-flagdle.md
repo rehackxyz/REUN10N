@@ -1,4 +1,4 @@
-### Sol  
+# Solution 
 
 ``` 
 #!/usr/bin/env python3

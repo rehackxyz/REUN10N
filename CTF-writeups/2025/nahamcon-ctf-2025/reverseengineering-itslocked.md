@@ -1,4 +1,4 @@
-### Sol  
+# Solution
 
 strings the flag.sh, it show the file uses bash, perl, openssl, base64  
 `perl -pe 's/[^[:print:]]//g' flag.sh` shows the file content  

@@ -1,3 +1,5 @@
+# Solution
+
 - endpoint: `/robots.txt`
 
 ```

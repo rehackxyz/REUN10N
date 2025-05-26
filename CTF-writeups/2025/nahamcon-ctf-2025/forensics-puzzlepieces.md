@@ -1,4 +1,4 @@
-### Sol  
+# Solution 
 
 There are flag parts in each exe.  
 ```

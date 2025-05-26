@@ -1,4 +1,4 @@
-### Sol  
+# Solution
 
 Strings the file and can see multiple jpg files  
 binwalk extract the challenge file.  

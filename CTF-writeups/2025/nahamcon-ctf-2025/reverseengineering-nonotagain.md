@@ -1,4 +1,4 @@
-### Sol  
+# Solution
 
 The goal is to recompute that same (seed >> 21)&0xFF sequence and then XOR it back out to recover the original characters using Linear Congruential Generator (LCG)  
 

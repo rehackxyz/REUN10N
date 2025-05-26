@@ -1,4 +1,4 @@
-### Sol  
+# Solution  
 
 The flag is at [1, 17, 11]  
 

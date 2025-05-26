@@ -1,4 +1,4 @@
-### Sol  
+# Solution
 
 Paste in console and got flag  
 ```

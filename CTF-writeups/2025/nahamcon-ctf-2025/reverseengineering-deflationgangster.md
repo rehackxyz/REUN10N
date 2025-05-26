@@ -1,4 +1,4 @@
-### Sol  
+# Solution 
 
 Instead of using UUUU marker, we use DEFG
 

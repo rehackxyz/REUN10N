@@ -1,4 +1,4 @@
-### Sol  
+# Solution
 
 Using regex `\b[0-9A-Fa-f]{32}\b` to find the only valid flag  
 

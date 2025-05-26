@@ -1,4 +1,4 @@
-### Sol  
+### Solution
 
 Vibe solved  
 ```

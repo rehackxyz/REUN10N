@@ -1,4 +1,4 @@
-### Sol  
+# Solution
 
 View page source `view-source:https://ctf.nahamcon.com/rules`  
 

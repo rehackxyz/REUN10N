@@ -1,3 +1,5 @@
+# Solution
+
 - graphql leak all user information
 - endpoint: `api/v2/graphql`
 

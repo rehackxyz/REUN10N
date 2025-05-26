@@ -1,4 +1,4 @@
-### Sol  
+# Solution
 
 Not sure what other method but I use blind-NoSQL  
 

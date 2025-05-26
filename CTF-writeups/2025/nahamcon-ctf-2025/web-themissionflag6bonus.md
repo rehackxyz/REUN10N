@@ -1,3 +1,5 @@
+# Solution
+
 - prompt injection in chat bot
 - i just randomly ask for flag n it gave me 
 - endpoint: `/api/v2/chat`

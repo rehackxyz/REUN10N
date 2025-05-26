@@ -1,4 +1,5 @@
-**Solution**,
+# Solution
+
 Log in as admin, from first flag we will get the admin username:  ``"username":"brian.1954"``
 Then bruteforce the password with wordlist given
 

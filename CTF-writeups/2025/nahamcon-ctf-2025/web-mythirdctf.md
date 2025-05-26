@@ -1,4 +1,5 @@
-**Solution**,
+# Solution
+
 using the wordlist given, create another wordlist with all possible rot values and fuzz for each directory
 http://challenge.nahamcon.com:30577/qbhf/oguucig/wrnhq/lewl
 

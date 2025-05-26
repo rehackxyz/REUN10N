@@ -1,4 +1,4 @@
-### Sol  
+# Solution
 
 Check the boxes 20k (can change) at a time using js. After it hit 2 mil, refresh and get flag  
 

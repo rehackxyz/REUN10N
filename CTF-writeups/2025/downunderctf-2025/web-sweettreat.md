@@ -2,7 +2,7 @@
 
 The challenge is about using the cookie sandwich technique from [Zakhar Fedotkin](https://portswigger.net/research/stealing-httponly-cookies-with-the-cookie-sandwich-technique) to steal HttpOnly cookies. This is possible because the application is running on Apache Tomcat, which falls back to RFC2109 parsing if the cookie starts with `$Version=1`.
 
-![alt text](image.png)
+![cookie sandwich](/CTF-writeups/2025/downunderctf-2025/cookie-sandwich.png)
 
 To exfiltrate the admin cookie, we need to find an endpoint that reflects cookie values. There are multiple XSSs in the challenge but the solution is to use the `language` cookie which is reflected in the html lang attribute.
 

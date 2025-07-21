@@ -1,12 +1,8 @@
-Category: web
-
-Challenge Name: Sweet Treat
-
 ## TLDR
 
 The challenge is about using the cookie sandwich technique from [Zakhar Fedotkin](https://portswigger.net/research/stealing-httponly-cookies-with-the-cookie-sandwich-technique) to steal HttpOnly cookies. This is possible because the application is running on Apache Tomcat, which falls back to RFC2109 parsing if the cookie starts with `$Version=1`.
 
-![cookie sandwich](/CTF-writeups/2025/downunderctf-2025/cookie-sandwich.png)
+![alt text](image.png)
 
 To exfiltrate the admin cookie, we need to find an endpoint that reflects cookie values. There are multiple XSSs in the challenge but the solution is to use the `language` cookie which is reflected in the html lang attribute.
 
@@ -49,3 +45,6 @@ setTimeout(sandwich, 100, 'http://127.0.0.1:8080/index.jsp', 'language');
 ```
 
 Flag: DUCTF{1_th0ught_y0u_c0uldnt_st34l_th3m}
+
+
+Solved by: benkyou

@@ -4,7 +4,14 @@ You can decompile gameboy roms in ghidra using [GhidraBoy](https://github.com/Ge
 
 Code is very simple, it parses our joypad inputs and compares it against the cheatcode (somewhere in memory). If we match 10 times, then we win. You can ignore `getFlag` implementation :)
 
+![main](/CTF-writeups/2025/whyctf-2025/ghidra1.png)
+
+
+![getFlag](/CTF-writeups/2025/whyctf-2025/ghidra2.png)
+
 To solve, I patched the `SUB C` instruction at `$03c7` to `SUB A` so we always get a zero. Then we need to modify [this ghidra script](https://raw.githubusercontent.com/ghidraninja/ghidra_scripts/refs/heads/master/export_gameboy_rom.py) to export the ROM.
+
+![patch instruction](/CTF-writeups/2025/whyctf-2025/ghidra3.png)
 
 ```python
 import re
@@ -34,6 +41,9 @@ with open(rom_file, "wb") as f:
     for n in names:
         dump_block(f, n)
 ```
+
+![gameboy flag](/CTF-writeups/2025/whyctf-2025/gameboy.png)
+
 
 Flag: `flag{0a94a34cf78309bf4aa7bc283e47fcd3}`
 

@@ -8,10 +8,12 @@ Judging from the session cookie pattern, it's a Flask application. There is an X
 
 Login with the admin's cookie and you get an admin panel. There is an SQL injection here.
 However, the query is expecting type jsonb. 
-![alt text](/CTF-writeups/2025/brunnerctf-2025/images/cakearchitect-cookie.png)
+
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/cakearchitect-jsonb.png)
+
 
 You can throw other errors to know it's postgres, then cast your column with `::jsonb`.
-![alt text](/CTF-writeups/2025/brunnerctf-2025/images/cakearchitect-jsonb.png)
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/cakearchitect-postgres.png)
 
 I got unintended solution for this, but there is a default config for Postgres 9.3 < 11.2 that allows you to execute commands using `COPY FROM PROGRAM`. I couldn't create my own tables so I used the existing cakes table. (img 4)
 

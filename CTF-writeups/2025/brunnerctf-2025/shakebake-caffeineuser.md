@@ -1,4 +1,6 @@
-There is a command injection in the `order_id` GET parameter.  You can read `index.php` to find the actual injection point (img 2).
+There is a command injection in the `order_id` GET parameter.  You can read `index.php` to find the actual injection point.
+
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/caffeine-injection.png)
 
 I used a PHP reverse shell to get shell as user.
 ```

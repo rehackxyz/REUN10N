@@ -16,6 +16,7 @@ Symbol table '.symtab' contains 7 entries:
 The output showing the binary is abnormal as normally `_start` would be the entry point of the binary and should be at a lower address and followed by main and the rest of the functions. So we should disassembly 
 
 2. Disassemble the binary 
+
 ![bakeforth1.png](./images/bakeforth1.png)
 Upon initial static analysis with Binary Ninja, we notice from the address 0x400000 to 0x40000a are filled with NOPs and it jumps to address 0x400011. 
 
@@ -39,12 +40,15 @@ Key information at this function is that usage of `pushfq`, `popfq` and `xor` op
 - `b *0x0000000000400011`
 - `ni` 
 Continue this process until you saw `SYS_READ` being executed 
+
 ![bakeforth2.png](./images/bakeforth2.png)
+
 Hit until you observe the "test" string is in rbx 
 ![bakeforth3.png](./images/bakeforth3.png)
 The next instruction that unpacked is just `mov al, byte ptr [rbx]` which is taking one byte from the string into AL register and then `cmp al, 0x$$`. The `$$` is the value of the flag string in byte. 
 
 Here is the first compare instruction:
+
 ![bakeforth4.png](./images/bakeforth4.png)
 In AL register containing 0x74 which is the letter `t` in ascii and the intended value is 0x62 which  is letter `b`, also the beginning letter of the flag header. 
 

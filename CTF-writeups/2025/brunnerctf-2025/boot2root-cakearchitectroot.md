@@ -5,7 +5,10 @@ postgres@ctf-cake-architect-user-26ba6272aefcb0d9-67566865dd-64pv5:~$ find / -pe
 /usr/local/bin/cake_logger
 ```
 
-`cake_logger` can add text to existing recipe, and create symlinks as root. You can copy the file to your host to reverse (img 1), but not necessary.
+`cake_logger` can add text to existing recipe, and create symlinks as root. You can copy the file to your host to reverse, but not necessary.
+
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/cakearchitect-cakelogger.png)
+
 If you try to write to a root protected file with `cake_logger` it fails because we don't have ownership.
 
 Basically, we have a write primitive via symlink race condition here, because there is a gap when it does the `access()`  check.

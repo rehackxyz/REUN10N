@@ -3,7 +3,13 @@ The page lets you enter recipes and save them. Based on one of the prebuilt reci
 Now you will notice that this is an ASP.NET application first glance:
 1. the `id` parameter is not case sensitive when you try to load other recipes
 2. Krestel server header (it's a Microsoft IIS thing)
-3. You can trigger an error with aspx syntax, we now know it's .cshtml. And you can get code eval (see 2nd image)
+3. You can trigger an error with aspx syntax, we now know it's .cshtml. And you can get code eval as shown below.
+
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/dotwhat-error.png)
+
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/dotwhat-razor.png)
+
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/dotwhat-linux.png)
 
 We then build a cshtml payload to get RCE on the box. Also, it's running on Linux (3rd img) instead because of the file path and windows binaries aren't found.
 

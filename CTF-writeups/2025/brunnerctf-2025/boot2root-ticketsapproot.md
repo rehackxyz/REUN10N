@@ -8,6 +8,9 @@ ctfplayer@ctf-tickets-app-user-70bd894a8de0d40c-5d7fd9cc6d-gqmzs:/app$ find / -p
 You have a couple of subcommands to read and write to `/var/log/syslog.log`.
 
 For the next step, you need to transfer the binary to your host for reversing.
+
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/ticketsapp-syslog-manager.png)
+
 TLDR: It's a simple switch case that handles which subcommand to call, and does operations on `/var/log/syslog.log`. The interesting subcommand to us is `syslog-manager clean`.
 The `local_1018` buffer is used to construct a command string and then called with system. Since `cleaner` is not an actual binary on the machine, and an absolute path is not used, we can create our own `cleaner` and call `syslog-manager clean` to call `system` with our command.
 

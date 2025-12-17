@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RE:UN10N CTF - 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(13, 148, 136, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #10b981 0%, #0d9488 50%, #14b8a6 100%);
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            font-weight: 300;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        main {
+            flex: 1;
+            padding: 3rem 0;
+        }
+        
+        .intro-section {
+            text-align: center;
+            padding: 0 1rem 3rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px dashed #e0f2f1;
+        }
+        
+        .intro-section p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: #555;
+        }
+        
+        .event-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(13, 148, 136, 0.15);
+            margin: 2.5rem 0;
+            border: 3px solid #e0f2f1;
+            transition: transform 0.3s ease;
+        }
+        
+        .event-image:hover {
+            transform: scale(1.01);
+        }
+        
+        .prizes-section {
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .prizes-section h2 {
+            color: #0d9488;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .prizes-section h2::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #10b981;
+            border-radius: 2px;
+        }
+        
+        .prize-announcement {
+            background: linear-gradient(to bottom right, #f0fdfa 0%, #e0f2f1 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            border-left: 5px solid #0d9488;
+            box-shadow: 0 6px 15px rgba(13, 148, 136, 0.1);
+        }
+        
+        .prize-announcement p {
+            margin-bottom: 1.2rem;
+            color: #334155;
+        }
+        
+        .contact-link {
+            display: inline-block;
+            background: linear-gradient(to right, #0d9488 0%, #10b981 100%);
+            color: white;
+            text-decoration: none;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+            box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+            border: none;
+            cursor: pointer;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .contact-link:hover {
+            background: linear-gradient(to right, #0f766e 0%, #0d9c6c 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(13, 148, 136, 0.4);
+        }
+        
+        .sponsors-section {
+            text-align: center;
+            padding: 2.5rem 0;
+            background-color: #f8fafc;
+            border-radius: 16px;
+            margin-top: 2rem;
+        }
+        
+        .sponsors-section h2 {
+            color: #0d9488;
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .sponsors-section h2::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #10b981;
+            border-radius: 2px;
+        }
+        
+        .sponsors-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3.5rem;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        
+        .sponsor-item {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(13, 148, 136, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e0f2f1;
+        }
+        
+        .sponsor-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(13, 148, 136, 0.2);
+        }
+        
+        .sponsor-logo {
+            height: 90px;
+            width: auto;
+            max-width: 180px;
+            object-fit: contain;
+            filter: grayscale(0%);
+        }
+        
+        footer {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            text-align: center;
+            padding: 1.8rem 0;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+        
+        .accent-text {
+            color: #0d9488;
+            font-weight: 600;
+        }
+        
+        .ctf-badge {
+            display: inline-block;
+            background-color: #10b981;
+            color: white;
+            font-size: 0.8rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 10px;
+            vertical-align: middle;
+            font-weight: 600;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .intro-section p {
+                font-size: 1.1rem;
+            }
+            
+            .sponsors-container {
+                gap: 2rem;
+            }
+            
+            .sponsor-logo {
+                height: 75px;
+            }
+            
+            .sponsor-item {
+                padding: 1.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.9rem;
+            }
+            
+            .sponsors-container {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .sponsor-logo {
+                height: 70px;
+            }
+            
+            .prize-announcement {
+                padding: 1.5rem;
+            }
+            
+            .contact-link {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>RE:UN10N CTF - 2025 <span class="ctf-badge">NEW</span></h1>
+            <p class="subtitle">An innovative cybersecurity challenge pushing the boundaries of ethical hacking</p>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section class="intro-section">
+                <p>An introduction of a new experiment that <span class="accent-text">RE:UN10N</span> (supported by <span class="accent-text">RE:HACK</span>) is planning for 2025. Join us for an exciting cybersecurity challenge that tests your skills across various domains.</p>
+                
+                <img src="/assets/2025.png" alt="RE:UN10N CTF 2025 Event" class="event-image">
+            </section>
+            
+            <section class="prizes-section">
+                <h2>Prizes & Contributions</h2>
+                
+                <div class="prize-announcement">
+                    <p>Prize details will be announced soon. We're preparing an exciting (affordable) reward structure for our winners, including cash prizes, vouchers?, and industry recognition.</p>
+                    <p>Interested in contributing to the event as a sponsor or partner? Help us create an unforgettable experience for cybersecurity enthusiasts worldwide.</p>
+                    <a href="mailto:reun10nctf@gmail.com" class="contact-link">Contact us at reun10nctf@gmail.com</a>
+                </div>
+            </section>
+            
+            <section class="sponsors-section">
+                <h2>Our Sponsors</h2>
+                <div class="sponsors-container">
+                    <div class="sponsor-item">
+                        <img src="/assets/rectf-htb.png" alt="HackTheBox" class="sponsor-logo">
+                    </div>
+                    <div class="sponsor-item">
+                        <img src="/assets/rectf-ice.jpeg" alt="ICE Digital Security" class="sponsor-logo">
+                    </div>
+                    <div class="sponsor-item">
+                            <img src="/assets/rectf-rehack.png" alt="ICE Digital Security" class="sponsor-logo">
+                        </div>
+                    </div>
+                <p style="margin-top: 2rem; color: #64748b; font-style: italic;">More sponsors to be announced</p>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; RE:UN10N CTF 2025. All rights reserved. | Part of the RE:HACK initiative</p>
+        </div>
+    </footer>
+</body>
+</html>

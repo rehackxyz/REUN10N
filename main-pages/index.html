@@ -1,48 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RE:UN10N - CTF Team</title>
-    <style>
-        body {
-            background-color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        img {
-            max-width: 50%;
-            height: auto;
-        }
-        .links {
-            margin-top: 20px;
-        }
-        .links a {
-            text-decoration: none;
-            color: #007bff;
-            font-size: 18px;
-            margin: 0 15px;
-            transition: color 0.3s;
-        }
-        .links a:hover {
-            color: #0056b3;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RE:UN10N - CTF Team</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: #ffffff;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    img {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      max-width: 600px;
+      line-height: 1.6;
+      margin: 0 auto 2rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    /* Green/Black/Red theme */
+    .links a {
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      border: 2px solid #000;
+      color: #000;
+      background: #fff;
+    }
+
+    .links a:hover {
+      background: #008000; /* green */
+      color: #fff;
+      border-color: #008000;
+    }
+
+    .links a:nth-child(2):hover { /* Twitter */
+      background: #000;
+      color: #fff;
+      border-color: #000;
+    }
+
+    .links a:nth-child(3):hover { /* Writeups */
+      background: #b00020; /* red */
+      color: #fff;
+      border-color: #b00020;
+    }
+  </style>
 </head>
 <body>
-    <img src="/assets/logo-gun-word-right.png" alt="RE:UN10N Logo">
-    <div class="links">
-        <a href="https://ctftime.org/team/307413" target="_blank">CTFtime</a><br>
-        <br><a href="https://x.com/reun10n_" target="_blank">Twitter</a><br>
-        <br><a href="https://github.com/rehackxyz/REUN10N/" target="_blank">Writeups</a><br>
-        <br><a href="news.html" target="_blank">What we did</a><br>
-        <br><a href="https://girls-in-ctf.online" target="_blank">Girls in CTF</a>
-    </div>
+  <img src="/assets/logo-gun-word-right.png" alt="RE:UN10N Logo">
+
+  <p>
+    We are a Malaysia-based group of CTF (Capture The Flag) players supported by 
+    <a href="https://www.rehack.my/" target="_blank">RE:HACK</a>.  
+    We focus on learning and playing cybersecurity games together, 
+    organising and participating in competitions, serving as a hub for local students 
+    and professionals, and contributing challenges to the CTF community.
+  </p>
+
+  <div class="links">
+    <a href="https://ctftime.org/team/307413" target="_blank">CTFtime</a>
+    <a href="https://x.com/reun10n_" target="_blank">Twitter</a>
+    <a href="https://github.com/rehackxyz/REUN10N/" target="_blank">Writeups</a>
+    <a href="news.html" target="_blank">What We Did</a>
+    <a href="#" target="_blank">RE:UN10N CTF - Coming Soon</a>
+    <a href="https://girls-in-ctf.online" target="_blank">Girls in CTF</a>
+    <a href="https://cybercamp.my" target="_blank">Malaysia Cybersecurity Camp</a>
+  </div>
 </body>
 </html>

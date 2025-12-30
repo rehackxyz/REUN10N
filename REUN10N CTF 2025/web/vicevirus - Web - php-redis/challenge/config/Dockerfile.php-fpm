@@ -1,0 +1,31 @@
+FROM php:8.2-fpm
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libssl-dev \
+    zlib1g-dev \
+    wget \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/* \
+    && cd /tmp \
+    && wget https://curl.se/download/curl-7.88.1.tar.gz \
+    && tar -xzf curl-7.88.1.tar.gz \
+    && cd curl-7.88.1 \
+    && ./configure \
+        --prefix=/usr/local \
+        --enable-optimize \
+        --disable-manual \
+        --disable-file \
+        --disable-gopher \
+        --with-openssl \
+        --with-zlib \
+    && make -j$(nproc) \
+    && make install || true \
+    && ldconfig \
+    && cd / \
+    && rm -rf /tmp/curl-7.88.1* \
+    && apt-get purge -y libcurl4t64 libcurl4 curl build-essential wget \
+    && apt-get autoremove -y \
+    && apt-get clean \
+    && ln -sf /usr/local/bin/curl /usr/bin/curl \
+    && ldconfig

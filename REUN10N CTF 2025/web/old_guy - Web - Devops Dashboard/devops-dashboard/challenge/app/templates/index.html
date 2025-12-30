@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStart DevOps Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">TechStart DevOps</div>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}" class="active">Dashboard</a>
+            <a href="{{ url_for('login') }}">Admin Login</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Service Status Dashboard</h1>
+        <p class="subtitle">Real-time deployment monitoring</p>
+
+        <div class="deployments-grid">
+            {% for deployment in deployments %}
+            <div class="deployment-card">
+                <div class="service-name">{{ deployment.service }}</div>
+                <div class="service-version">v{{ deployment.version }}</div>
+                <div class="service-status status-{{ deployment.status }}">
+                    {{ deployment.status }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="info-box">
+            <h3>System Information</h3>
+            <p>Dashboard Version: 1.0.0</p>
+            <p>Environment: Production</p>
+            <p>Last Updated: Just now</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TechStart Inc. - Internal Use Only</p>
+    </footer>
+</body>
+</html>

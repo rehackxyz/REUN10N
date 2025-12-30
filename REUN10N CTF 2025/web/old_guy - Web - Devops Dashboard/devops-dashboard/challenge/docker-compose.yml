@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  devops-dashboard:
+    build: .
+    ports:
+      - "8080:80"
+    environment:
+      - FLAG=FLAG{g1t_3xp0sur3_l34ds_t0_cr3d_l34k}
+    restart: unless-stopped

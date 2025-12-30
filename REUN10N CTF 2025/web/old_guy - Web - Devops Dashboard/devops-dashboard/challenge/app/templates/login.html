@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - TechStart DevOps</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">TechStart DevOps</div>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Dashboard</a>
+            <a href="{{ url_for('login') }}" class="active">Admin Login</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="login-box">
+            <h2>Admin Login</h2>
+            <p>Access restricted to authorized personnel only.</p>
+
+            {% if error %}
+            <div class="error-message">{{ error }}</div>
+            {% endif %}
+
+            <form method="POST" action="{{ url_for('login') }}">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TechStart Inc. - Internal Use Only</p>
+    </footer>
+</body>
+</html>

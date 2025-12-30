@@ -1,0 +1,7 @@
+FROM redis:7-alpine
+
+COPY redis.conf /usr/local/etc/redis/redis.conf
+COPY redis-start.sh /redis-start.sh
+RUN chmod +x /redis-start.sh
+
+CMD ["/redis-start.sh"]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - TechStart DevOps</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">TechStart DevOps</div>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Dashboard</a>
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Admin Panel</h1>
+        <p class="subtitle">Welcome, Administrator</p>
+
+        <div class="admin-section">
+            <h3>System Secrets</h3>
+            <div class="secret-box">
+                <p><strong>Production API Key:</strong></p>
+                <code>{{ flag }}</code>
+            </div>
+        </div>
+
+        <div class="admin-section">
+            <h3>Quick Actions</h3>
+            <div class="actions-grid">
+                <button class="btn-action">Restart All Services</button>
+                <button class="btn-action">Clear Cache</button>
+                <button class="btn-action">View Logs</button>
+                <button class="btn-action">Backup Database</button>
+            </div>
+        </div>
+
+        <div class="admin-section">
+            <h3>Recent Activity</h3>
+            <ul class="activity-log">
+                <li>Deploy payment-service v3.0.1 - 2 hours ago</li>
+                <li>Config update api-gateway - 5 hours ago</li>
+                <li>Restart notification-service - 1 day ago</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TechStart Inc. - Internal Use Only</p>
+    </footer>
+</body>
+</html>

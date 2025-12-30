@@ -1,0 +1,6 @@
+Challenge Note
+
+Challenge Title: php-redis
+Challenge difficulty: Medium
+Challenge Desc: Get the flag pls 
+Real flag: RE:CTF{0r4ng3_1z_my_g04t_plu5_u_d0nt_n33d_g0ph3r}

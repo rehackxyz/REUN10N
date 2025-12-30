@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./www:/var/www/html
+      - ./config/apache2.conf:/etc/apache2/sites-available/000-default.conf
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - php-fpm
+      - redis
+    networks:
+      - app-network
+
+  php-fpm:
+    build:
+      context: ./config
+      dockerfile: Dockerfile.php-fpm
+    volumes:
+      - ./www:/var/www/html
+      - ./config/php-fpm.conf:/usr/local/etc/php-fpm.d/www.conf
+    networks:
+      - app-network
+
+  redis:
+    build:
+      context: ./config
+      dockerfile: Dockerfile.redis
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

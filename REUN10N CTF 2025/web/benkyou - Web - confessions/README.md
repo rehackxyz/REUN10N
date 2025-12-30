@@ -2,7 +2,7 @@
 
 Challenge author: benkyou
 
-It only works on Firefox.
+Description: Inspired by uni confessions page, I vibecoded one for CTF players.
 
 Flag: RE:CTF{XsS_j0uZu_D3sU_neee~owo!}
 

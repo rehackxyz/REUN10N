@@ -1,4 +1,4 @@
-# .file/file/file/ozz/github - config
+# /file/file/file/ozz/.github - config
 
 tez
 

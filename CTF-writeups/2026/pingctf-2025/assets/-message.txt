@@ -1,8 +1,0 @@
----
-# ..` - `...
-
-""ozz tezz---"""
-print(category_normalized)"""
-
-Solved by: os1ris
----

@@ -13,4 +13,4 @@ Paylaod to list all file then read flag. Otherwise can see how flag build in `/a
 
 Flag: PCTF{SQL1_C4n_b3_U53D_3Ff1C13N7lY} 
 
-Solved by: vicevirus
+Solved by: amkim13

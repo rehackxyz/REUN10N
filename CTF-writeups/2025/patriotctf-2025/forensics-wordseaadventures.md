@@ -1,3 +1,5 @@
+# Solution
+
 1. Extract words file using binwalk
 2. Descrition mention about passpharse and we have 3 picture.
 3. squidjpg contains flag.

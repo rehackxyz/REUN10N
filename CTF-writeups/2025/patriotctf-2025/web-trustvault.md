@@ -1,3 +1,5 @@
+# Solution
+
 1. Register as any user.
 2. Hint about SQLI + SSTI
 3. Read source code in report will show hidden endpoint `/search`

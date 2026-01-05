@@ -1,4 +1,4 @@
-# SOlution
+# Solution
 ```
 def read_states(path="keystream_leak.txt"):
     states = []

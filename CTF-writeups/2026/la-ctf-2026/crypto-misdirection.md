@@ -1,10 +1,11 @@
 # crypto - misdirection
 
-```
-```
+
 Flag:`lactf{d0nt_b3_n0nc00p3r4t1v3_w1th_my_s3rv3r}`
 
 Solved by Ha1qal
+```
+
 #!/usr/bin/env python3
 import time
 import threading
@@ -238,4 +239,4 @@ def solve():
 
 if __name__ ==
 
-Solved by: yappare
+```

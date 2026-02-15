@@ -9,6 +9,7 @@ lactf{is_the_three_body_problem_np_hard}
 ```
 
 SOLVED by Zeqzoq
+```
 #!/usr/bin/env python3
 from __future__ import annotations
 

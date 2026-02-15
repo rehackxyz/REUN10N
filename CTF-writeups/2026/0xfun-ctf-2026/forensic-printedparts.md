@@ -39,9 +39,3 @@ flag: `0xfun{this_monkey_has_a_flag}`
 
 Solved by: OS1R1S
 
-## Attachments
-
-![image.png](https://raw.githubusercontent.com/rehackxyz/REUN10N/main/CTF-writeups/2026/0xfun-ctf-2026/assets/printedparts-image.png)
-
-
-Solved by: yappare

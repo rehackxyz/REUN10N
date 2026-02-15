@@ -12,4 +12,3 @@ Crab: I_ (bool), crabby (Object), cr4bs (u64)
 Crabby: l0v3_ (Array of Strings), r3vv1ng_ (u64)
 ```
 
-Solved by: yappare

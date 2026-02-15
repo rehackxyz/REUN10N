@@ -4,7 +4,7 @@ Flag: `lactf{still_too_lazy_to_write_a_plaintext_so_heres_a_random_wikipedia_art
 
 ```
 
-```
+
 #!/usr/bin/env python3
 import math
 import random
@@ -287,5 +287,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
 
 Solved by: yappare

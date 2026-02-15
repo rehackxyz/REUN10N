@@ -1,8 +1,8 @@
 # misc - keep scripting
 
-```
-```
+
 SOLVED by Jigenz
+```
 import socket
 import select
 import re
@@ -378,5 +378,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-Solved by: yappare
+```

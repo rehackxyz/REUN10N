@@ -5,11 +5,6 @@ Flag: `lactf{pr0fe55or_p4u1_eggert}`
 solver script:
 
 ```
-
-```
-
-will print out bunch of potential flags.
-the first word looks like professor, googled the CS 131 Programming Languages found Professor Paul Eggert
 import cv2
 import numpy as np
 from itertools import product
@@ -180,5 +175,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+```
+
+will print out bunch of potential flags.
+the first word looks like professor, googled the CS 131 Programming Languages found Professor Paul Eggert
+
 
 Solved by: yappare

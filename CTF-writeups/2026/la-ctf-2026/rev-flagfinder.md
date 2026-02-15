@@ -1,11 +1,9 @@
 # rev - flag-finder
 
-```
-
-```
 
 Flag :`lactf{Wh47_d0_y0u_637_wh3n_y0u_cr055_4_r363x_4nd_4_n0n06r4m?_4_r363x06r4m!}`
 https://cdn.discordapp.com/attachments/1469958535092899873/1469958879549849722/image.png?ex=69921f23&is=6990cda3&hm=e5bc9c1d5e5182455b7ea890d821d3ffd9f7caa5f460b13332a682fe862709de&
+```
 #!/usr/bin/env python3
 import re
 from dataclasses import dataclass
@@ -573,5 +571,5 @@ def main():
 
 
 if __name__ == "__
-
-Solved by: yappare
+```
+Solved by: Zeqzoq

@@ -29,8 +29,6 @@ fetch('/api/checkout', {
 });
 
 
-SUCCESS! Flag: KCTF{kn1ght_c0up0n_m4st3r_2026}```
-
-Solved by ud444ng
-
-Solved by: yappare
+SUCCESS! Flag: KCTF{kn1ght_c0up0n_m4st3r_2026}
+```
+Solved by: ud444ng

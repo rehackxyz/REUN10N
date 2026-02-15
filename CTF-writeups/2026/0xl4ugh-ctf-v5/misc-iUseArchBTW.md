@@ -1,4 +1,9 @@
-# misc - brainfck??
+# misc - iUseArchBTW??
+
+https://github.com/overmighty/i-use-arch-btw 
+
+the encryption method use brainfuck. crafting new pattern using this info instead of downloading the whole project:
+https://github.com/overmighty/i-use-arch-btw/blob/master/docs/language_specification.md
 
 ```
 # Read the file

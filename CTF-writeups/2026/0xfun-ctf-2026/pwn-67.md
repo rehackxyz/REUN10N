@@ -1,10 +1,6 @@
 # pwn - 67
 
 `0xfun{p4cm4n_Syu_br0k3_my_xpl0it_btW}`
-
-```
-
-```
 import os
 from pwn import *
 

@@ -17,4 +17,6 @@ XOR:
 
 Flag: `0xfun{h0mem4d3_f1rewall_305x908fsdJJ}`
 
+Solved by OS1RIS
+
 Solved by: ha1qal

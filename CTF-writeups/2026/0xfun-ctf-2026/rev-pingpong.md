@@ -10,6 +10,7 @@ char a112111110103[15] = "112.111.110.103"; // weak
 got XOR calculation by part. 2 key which is the ip itself. cut first half ip and another ip. xor
 
 0149545b5f4b5d1e5c545d1a55036c5700404b46505d426e02001b4909030957414a7b7a48
+
 XOR:
 112.105.110.103
 112.111.110.103

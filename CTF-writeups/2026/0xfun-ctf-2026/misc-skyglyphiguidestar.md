@@ -5,6 +5,7 @@ then inspect skyglyph_p75.png
 Flag: `0xfun{5t4R5_t3LL_5t0r135}`
 
 Solved by 171k
+```
 import csv
 import math
 from pathlib import Path
@@ -229,6 +230,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
 
-Solved by: ha1qal
+    main()
+```

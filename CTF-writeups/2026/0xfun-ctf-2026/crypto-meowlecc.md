@@ -3,6 +3,7 @@
 https://chatgpt.com/share/698ee2af-4b20-8009-9e05-dce7330603e4
 
 FLAG:`0xfun{n0n_c4n0n1c4l_l1f7s_r_c00l}`
+```
 #!/usr/bin/env python3
 import re, random, hashlib
 from Crypto.Cipher import AES, DES
@@ -188,6 +189,8 @@ mid = unpad(DES.new(des_key, DES.MODE_CBC, iv=des_iv).decrypt(ct), 8)
 pt  = unpad(AES.new(aes_key, AES.MODE_CBC, iv=aes_iv).decrypt(mid), 16)
 
 print("d =", d)
+
 print("flag =", pt.decode())
+```
 
 Solved by: ha1qal

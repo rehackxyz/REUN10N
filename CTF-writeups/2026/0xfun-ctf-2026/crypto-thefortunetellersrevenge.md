@@ -1,6 +1,7 @@
 # crypto - The Fortune Teller's Revenge
 
 FLAG:`0xfun{r3v3ng3_0f_th3_f0rtun3_t3ll3r}`
+```
 #!/usr/bin/env python3
 from pwn import remote
 import re
@@ -192,6 +193,7 @@ def main():
     p.interactive()
 
 if __name__ == "__main__":
-    main()
 
+    main()
+```
 Solved by: ha1qal

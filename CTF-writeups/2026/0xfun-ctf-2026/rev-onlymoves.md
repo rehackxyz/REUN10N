@@ -1,14 +1,14 @@
 # rev - Only Moves
 
-The binary compares a 28-byte embedded target at 0x8057010 against a 28-byte computed value left on the stack (observed at 0x8600158) right before it prints "Wrong!\n".
+The binary compares a 28-byte embedded target at `0x8057010` against a 28-byte computed value left on the stack (observed at `0x8600158`) right before it prints "Wrong!\n".
 Instead of reversing the mov-fuscated VM, use an oracle: on the Wrong path, dump both exp and got.
 By flipping one input byte at a time and looking at got_ref XOR got_mod, you can empirically see a triangular “suffix-only” effect (the change becomes a constant byte repeated from an index start = i ^ 1 to the end), which is easy to invert with queries.
 
  Files Needed:
-only_moves (challenge binary)
-hook_printf.c (LD_PRELOAD oracle shim source)
-hook_oracle.so (compiled oracle shim; can be rebuilt from hook_printf.c)
-solve.py (solver that queries the oracle and reconstructs the flag)
+`only_moves` (challenge binary)
+`hook_printf.c` (`LD_PRELOAD` oracle shim source)
+`hook_oracle.so` (compiled oracle shim; can be rebuilt from `hook_printf.c`)
+`solve.py` (solver that queries the oracle and reconstructs the flag)
  
 ```c
 typedef unsigned int u32;

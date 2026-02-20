@@ -1,6 +1,7 @@
 # pwn - 67
 
-`0xfun{p4cm4n_Syu_br0k3_my_xpl0it_btW}`
+Flag:`0xfun{p4cm4n_Syu_br0k3_my_xpl0it_btW}`
+```python
 import os
 from pwn import *
 
@@ -343,6 +344,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
 
+    main()
+```
 Solved by: ha1qal

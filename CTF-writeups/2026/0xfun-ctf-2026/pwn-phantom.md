@@ -4,7 +4,7 @@ create c file for exploit
 
 then transfer the file using python script
 
-python3 push_remote.py chall.0xfun.org 55883 --bin ./build/exploit --remote /tmp/exploit
+`python3 push_remote.py chall.0xfun.org 55883 --bin ./build/exploit --remote /tmp/exploit`
 
 FLAG:`0xfun{r34l_k3rn3l_h4ck3rs_d0nt_unzip}`
 

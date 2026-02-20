@@ -1,9 +1,10 @@
 # pwn - bit_flips
 
-python3 solve.py --host chall.0xfun.org --port 29165 --cmd-first --cmd 'cat flag
-' --idle 15
+`python3 solve.py --host chall.0xfun.org --port 29165 --cmd-first --cmd 'cat flag
+' --idle 15`
 
 FLAG:`0xfun{3_b1t5_15_4ll_17_74k35_70_g37_RC3_safhu8}`
+```python
 #!/usr/bin/env python3
 import argparse
 import os
@@ -546,6 +547,7 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
 
+    raise SystemExit(main())
+```
 Solved by: ha1qal

@@ -1,8 +1,9 @@
 # hardware - Analog Nostalgia
 
-python3 solve_vga.py signal.bin --ocr -o frame.png
+`python3 solve_vga.py signal.bin --ocr -o frame.png`
 
 FLAG:`0XFUN{AN4LOG_IS_NOT_D3AD_JUST_BL4NKING}`
+```python
 #!/usr/bin/env python3
 import argparse
 import io
@@ -156,6 +157,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
 
+    main()
+```
 Solved by: ha1qal

@@ -31,5 +31,3 @@ after analyzing, we got 7,9,2,9,6,3
 just sha256sum the 792963 to get the sha256
 thenn got the flag
 flag: `EHAX{5bec84ad039e23fcd51d331e662e27be15542ca83fd8ef4d6c5e5a8ad614a54d}`
-
-Solved by: yappare

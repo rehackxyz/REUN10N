@@ -2,7 +2,7 @@
 
 Solved by: vicevirus
 
-```
+```python3
 #!/usr/bin/env python3
 """
 MegaCorp Industries - Full Exploit Chain
@@ -49,4 +49,3 @@ r = requests.post(f"{BASE}/fetch", cookies={"token": TOKEN},
 print(r.text)
 ```
 
-Solved by: yappare

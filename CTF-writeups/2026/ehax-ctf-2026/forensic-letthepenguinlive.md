@@ -10,4 +10,3 @@ then i put it inside sonic visualizer to inspect the spectogram
 
 Flag:`EH4X{0n3_tr4ck_m1nd_tw0_tr4ck_f1es}`
 
-Solved by: yappare

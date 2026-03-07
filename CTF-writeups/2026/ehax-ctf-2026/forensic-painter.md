@@ -99,4 +99,3 @@ print("\n[!!!] Drawing reconstructed! Open the PNG files to see what was painted
 ```
 flag: `EH4X{wh4t_c0l0ur_15_th3_fl4g}`
 
-Solved by: yappare

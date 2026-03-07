@@ -2,9 +2,6 @@
 
 Solved by : G10D
 
-```
-
-```
 Flag: `EH4X{unf0rtun4t3ly_th3_lul_1s_0n_m3}`
 
 The binary implements a custom heap allocator (“lulocator”) with options to allocate, write, free, and execute a function via a global runner pointer.
@@ -28,6 +25,7 @@ Calling run() executes:
 This gives a shell and allows reading the flag.
 
 Heap overflow → unsafe unlink → function pointer hijack → shell.
+```python3
 #!/usr/bin/env python3
 import socket, re, struct, time
 
@@ -221,5 +219,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-Solved by: yappare
+```

@@ -62,5 +62,3 @@ CALL D
 STDOUT E
 ```
 flag: `EH4X{chusembly_a1n7_7h47_7uffff_br0} `
-
-Solved by: yappare

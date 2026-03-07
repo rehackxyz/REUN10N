@@ -8,6 +8,7 @@ script explanation is commented inside the code
 
 
 flag: `EH4X{1nf3rn0_spr1n7_bl4z3_runn3r_m4573r} `
+```python3
 #!/usr/bin/env python3
 
 import socket
@@ -432,5 +433,4 @@ class FireMazeSolver:
 if __name__ == "__main__":
     solver = FireMazeSolver("chall.ehax.in", 31337)
     solver.solve()
-
-Solved by: yappare
+```

@@ -5,16 +5,6 @@ Solved by: p5yd4wk
 This challenge involves exploiting a smart contract vulnerability in a Vault contract that uses delegatecall to execute functions from a Governance contract. The goal is to drain all funds from the vault by becoming the admin and unpausing the contract.
 this is the cool script i use to exploit the contract
 ```
-
-```
-what it does:
-
-Drop malicious contract with a function that writes  to slot 1 (where admin is stored).
-Point Vault's governance to this contract (no access control).
-Call execute() with the malicious function which overwrites admin function with my address
-Call execute() with setProposal(0) which unpauses the vault
-withdraw all funds as the new admin :3
-flag: `EH4X{c4ll1ng_m4d3_s000_e45y_th4t_my_m0m_d03snt_c4ll_m3}`
 const { ethers } = require("ethers");
 const net = require("net");
 
@@ -185,5 +175,13 @@ async function main() {
 }
 
 main().catch((e) => { console.error("\n[-] Fatal:", e.message); process.exit(1); });
+```
+what it does:
 
-Solved by: yappare
+Drop malicious contract with a function that writes  to slot 1 (where admin is stored).
+Point Vault's governance to this contract (no access control).
+Call execute() with the malicious function which overwrites admin function with my address
+Call execute() with setProposal(0) which unpauses the vault
+withdraw all funds as the new admin :3
+flag: `EH4X{c4ll1ng_m4d3_s000_e45y_th4t_my_m0m_d03snt_c4ll_m3}`
+

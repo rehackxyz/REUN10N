@@ -1,40 +1,15 @@
 # misc - good-vibes
 
-scans the riddle for two things
+Analyze PCAP → find plaintext chat
+Detect switch to custom VPN traffic
+Reverse vibepn-client
+Identify AES-256-GCM encryption
+Discover key derived from time(NULL)
+Rebuild key using packet timestamp
+Decrypt tunnel packets
+Recover flag
 
-Binary literals: 朝[春秋]+暮
-which.. 
-春=0
-秋=1 
-
-LSB-first
-
-operations or calculations: X为OP(A)(B)矣 or X为OP(A)矣
-
-
-the program resolve using operation semantic (chaching or cacheing idk spells) :
-```
-  - 朝[春秋]+暮  : binary literal, 春=0 秋=1 LSB-first
-
-example 朝春秋暮 = 0b01 = 2
-
-合(a, b)     : a + b  (addition)
-销(a, b)     : a - b  (subtraction)
-次(a, b)     : a * b  (multiplication)
-分(a, b)     : a // b (floor division)
-幂(a, b)     : a ** b (exponentiation)
-阶(a)        : a!     (factorial)
-```
-tl;dr
-```
-合 : a + b
-销 : a - b
-次 : a * b
-分 : a // b
-幂 : a ** b
-阶 : a!
-```
-Flag:`dice{y0u_int3rpret3d_Th3_CJK_gr4mMaR_succ3ssfully}`
+Flag:`dice{y0u_sh0uld_alw@ys_vib3_y0ur_vpns_82bc3}`
 
 Compiled by: yappare
-Solved by: OS1RIS
+Solved by: g10d
